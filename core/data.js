@@ -26,6 +26,10 @@ export async function loadData(base = "./dist/") {
   return data;
 }
 
+const metadataKey = (key) => key.replace(/-contributor$/, "").replaceAll(".", "-");
+const metadataFor = (metadata, key) =>
+  metadata[key] ?? Object.entries(metadata).find(([k]) => metadataKey(k) === metadataKey(key))?.[1];
+
 // Extract model names and ordinals from older snapshots that embed them in the name.
 const attemptSuffix = /\s*\((?:(.*?)\s*,\s*)?attempt\s+(\d+)\)\s*$/i;
 
@@ -56,8 +60,10 @@ function groupAttempts(data) {
     const mean = scores.reduce((s, v) => s + v, 0) / (scores.length || 1);
     const sd = Math.sqrt(scores.reduce((s, v) => s + (v - mean) ** 2, 0) / (scores.length || 1));
     const best = scored.reduce((b, r) => (!b || r.score > b.score ? r : b), null) ?? runs[0];
-    // Release metadata is about the model, never the campaign or attempt timestamp.
-    const date = runs.find((r) => r.release_date)?.release_date ?? data.modelMetadata[key]?.release_date;
+    // Release metadata is about the model, never the campaign or attempt timestamp. Keys are matched with
+    // dots and dashes treated alike (Devin routes write glm-5-3, others glm-5.3) and without the
+    // "-contributor" tag the public names drop.
+    const date = runs.find((r) => r.release_date)?.release_date ?? metadataFor(data.modelMetadata, key)?.release_date;
     const releaseDate = /^\d{4}-\d{2}-\d{2}$/.test(date ?? "") ? date : null;
     const model = { key, runs: scored, slots, best, releaseDate, n: scores.length, declared: slots.length,
       min: Math.min(...scores), max: Math.max(...scores), mean, sd };

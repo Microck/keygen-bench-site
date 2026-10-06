@@ -99,6 +99,8 @@ const CSS = `
 .vb .dd-pop { max-height: 60vh; }
 .vb .dd-pop .list-row { height: 17px; line-height: 17px; }
 .vb .dd-face .badge, .vb .dd-pop .badge { width: 12px !important; height: 12px !important; }
+/* The face is 14px with a 1px sunken border and 2px top padding: lift the 12px logo onto the inner box so it never covers the bottom border. */
+.vb .dd-face .badge { position: relative; top: -1px; }
 .vb .list-row { height: 10px; line-height: 10px; }
 .vb .tracker-entry { appearance: none; display: block; width: 100%; margin: 0; padding: 0 0 0 2px; border: 0; background: transparent; color: var(--pattext); font-family: inherit; font-size: inherit; text-align: left; }
 .vb .tracker-entry.sel { background: var(--pattext); color: #000; }
