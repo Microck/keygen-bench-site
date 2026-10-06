@@ -1,8 +1,8 @@
 // Page transition ("slide deck"). The old page is a frozen ghost copy laid over the new one.
-// Old panels wipe off sideways in a wave; new panels wipe in from the other side, row by row, left
-// column first. A wipe clips each panel inside its own box instead of moving it, so a panel never
-// slides over its neighbour or gets cut by its column's edge mid-animation. steps() keeps the edge on
-// whole FT2 pixels. Returns the total duration in ms.
+// Old panels slide off sideways in a wave; new panels slide in from the other side, row by row, left
+// column first. Each moving panel is clipped to the box it occupies at rest (the clip offsets the
+// translation), so it never slides over a neighbour or gets cut by its column's edge. steps() keeps
+// motion on whole FT2 pixels. Returns the total duration in ms.
 //   outs: top-level panels of the ghost, reading order
 //   ins:  top-level panels of the new page, reading order
 //   dir:  +1 moving to a later tab, -1 moving back
@@ -34,13 +34,13 @@ export const TRANSITION_CSS = `
 .vb .ghost > :not(.panel):not(.toc) { background: transparent; }
 .vb .t-slide-in { animation: 240ms steps(8, end) var(--d, 0ms) both; }
 .vb .t-slide-out { animation: 180ms steps(6, end) var(--d, 0ms) both; }
-.vb .t-slide-in.t-fwd { animation-name: t-wipe-in-fwd; }
-.vb .t-slide-in.t-back { animation-name: t-wipe-in-back; }
-.vb .t-slide-out.t-fwd { animation-name: t-wipe-out-fwd; }
-.vb .t-slide-out.t-back { animation-name: t-wipe-out-back; }
-@keyframes t-wipe-in-fwd { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0); } }
-@keyframes t-wipe-in-back { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0); } }
-@keyframes t-wipe-out-fwd { from { clip-path: inset(0); } to { clip-path: inset(0 100% 0 0); } }
-@keyframes t-wipe-out-back { from { clip-path: inset(0); } to { clip-path: inset(0 0 0 100%); } }
+.vb .t-slide-in.t-fwd { animation-name: t-in-fwd; }
+.vb .t-slide-in.t-back { animation-name: t-in-back; }
+.vb .t-slide-out.t-fwd { animation-name: t-out-fwd; }
+.vb .t-slide-out.t-back { animation-name: t-out-back; }
+@keyframes t-in-fwd { from { transform: translateX(48px); clip-path: inset(0 48px 0 0); opacity: 0; } 60% { opacity: 1; } to { transform: none; clip-path: inset(0); } }
+@keyframes t-in-back { from { transform: translateX(-48px); clip-path: inset(0 0 0 48px); opacity: 0; } 60% { opacity: 1; } to { transform: none; clip-path: inset(0); } }
+@keyframes t-out-fwd { to { transform: translateX(-48px); clip-path: inset(0 0 0 48px); opacity: 0; } }
+@keyframes t-out-back { to { transform: translateX(48px); clip-path: inset(0 48px 0 0); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .vb .t-slide-in, .vb .t-slide-out { animation: none !important; } }
 `;
