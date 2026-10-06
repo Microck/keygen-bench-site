@@ -1,0 +1,413 @@
+// 16x16 pixel-art maker logos, redrawn by hand from the marks Artificial Analysis shows
+// (artificialanalysis.ai/img/logos/*). '.' = transparent; other chars index into `pal`. `tile` fills behind.
+// Trademarks of their owners; used to identify the maker only.
+
+export const LOGOS = {
+  "OpenAI": {
+    tile: null, pal: { w: "#FFFFFF" },
+    px: [
+      ".....wwww.......",
+      "....w...wwwww...",
+      "...w...ww....w..",
+      "..ww.ww...w..ww.",
+      ".www.w..wwww..w.",
+      "w..w.wwwww..www.",
+      "w..w.ww..ww...w.",
+      "w..w.w....www..w",
+      "w..www....w.w..w",
+      ".w...ww..ww.w..w",
+      ".www..wwwww.w..w",
+      ".w.wwwww..w.www.",
+      ".ww..w...ww.ww..",
+      "..w....ww...w...",
+      "...wwwww...w....",
+      ".......wwww.....",
+    ],
+  },
+  "Anthropic": {
+    tile: "#F0EEE6", pal: { k: "#141413" },
+    px: [
+      "................",
+      "................",
+      "................",
+      "....kkkk.kkk....",
+      "....kkkk.kkkk...",
+      "...kkkkkk.kkk...",
+      "...kkk.kk.kkkk..",
+      "...kk..kkk.kkk..",
+      "..kkk..kkk.kkkk.",
+      "..kkkkkkkk..kkk.",
+      ".kkkkkkkkkk.kkkk",
+      ".kkk....kkk..kkk",
+      "kkk......kkk.kkk",
+      "................",
+      "................",
+      "................",
+    ],
+  },
+  "Google": {
+    tile: null, pal: { r: "#EA4335", y: "#FBBC04", g: "#34A853", b: "#4285F4" },
+    px: [
+      "................",
+      ".....rrrrrr.....",
+      "...rrrrrrrrrr...",
+      "..rrrr....rrrr..",
+      ".rrr.......rr...",
+      ".yyy............",
+      "yyy.............",
+      "yyy.....bbbbbbbb",
+      "yyy.....bbbbbbbb",
+      "yyy..........bbb",
+      ".yyy........bbb.",
+      ".ggg.......bbbb.",
+      "..gggg....gggb..",
+      "...gggggggggg...",
+      ".....gggggg.....",
+      "................",
+    ],
+  },
+  "xAI": {
+    tile: "#000000", pal: { w: "#FFFFFF" },
+    px: [
+      "................",
+      "................",
+      "................",
+      "..............w.",
+      ".............ww.",
+      ".ww.........ww..",
+      "..ww......www...",
+      "...ww...www.....",
+      "....wwwww.......",
+      "....wwww........",
+      "...ww..ww.......",
+      "..ww....ww......",
+      ".ww......ww.....",
+      "ww........ww....",
+      "................",
+      "................",
+    ],
+  },
+  "DeepSeek": {
+    tile: null, pal: { b: "#4D6BFE", d: "#2F4AD8", w: "#FFFFFF" },
+    px: [
+      "................",
+      "................",
+      "..............b.",
+      "...bbbbb....bbb.",
+      ".bbbbbbbbb..bbbb",
+      "bbbbbbbbbbbbbbb.",
+      "bbwbbbbbbbbbbb..",
+      "bb.bbbbbbbbbbb..",
+      "b...bbbbbbbbbb..",
+      "b....bbddbbbbb..",
+      "bb....bdddbbb...",
+      ".bb.....ddbbb...",
+      "..bbb..bbbbbb...",
+      "...bbbbbbbbb....",
+      ".....bbbbb......",
+      "................",
+    ],
+  },
+  "Zhipu (Z.ai)": {
+    tile: null, pal: { k: "#2D2D2D", w: "#FFFFFF" },
+    px: [
+      "................",
+      "..kkkkkkkkkkkk..",
+      ".kkkkkkkkkkkkkk.",
+      ".kkkkkkkkkkkkkk.",
+      ".kkwwwwwwwwwwkk.",
+      ".kkwwwwwwwwwwkk.",
+      ".kkkkkkkkwwwkkk.",
+      ".kkkkkkkwwwkkkk.",
+      ".kkkkkkwwwkkkkk.",
+      ".kkkkkwwwkkkkkk.",
+      ".kkkkwwwkkkkkkk.",
+      ".kkwwwwwwwwwwkk.",
+      ".kkwwwwwwwwwwkk.",
+      ".kkkkkkkkkkkkkk.",
+      "..kkkkkkkkkkkk..",
+      "................",
+    ],
+  },
+  "Moonshot AI": {
+    tile: "#000000", pal: { w: "#FFFFFF", b: "#1783FF" },
+    px: [
+      "................",
+      "................",
+      "............bb..",
+      "............bb..",
+      "...ww....ww.....",
+      "...ww...ww......",
+      "...ww..ww.......",
+      "...ww.ww........",
+      "...wwww.........",
+      "...wwwww........",
+      "...ww.www.......",
+      "...ww..www......",
+      "...ww...www.....",
+      "...ww....www....",
+      "................",
+      "................",
+    ],
+  },
+  "Alibaba (Qwen)": {
+    tile: null, pal: { o: "#FF6A00" },
+    px: [
+      "................",
+      "................",
+      "................",
+      "........ooooo...",
+      "......oooooooo..",
+      "....oooo....ooo.",
+      "...ooo.......oo.",
+      "..ooo..o....oo..",
+      ".oooo......ooo..",
+      "oooo......ooo...",
+      "ooo......ooo....",
+      "oo.......oo..oo.",
+      ".ooooooo..oooo..",
+      "..ooooo.........",
+      "................",
+      "................",
+    ],
+  },
+  "Xiaomi": {
+    tile: null, pal: { o: "#FF6900", w: "#FFFFFF" },
+    px: [
+      "...oooooooooo...",
+      "..oooooooooooo..",
+      ".oooooooooooooo.",
+      "oooooooooooooooo",
+      "oooooooooooooooo",
+      "ooowwwwwwoowwooo",
+      "ooowwwwwwwowwooo",
+      "ooowwooowwowwooo",
+      "ooowwoowowowwooo",
+      "ooowwoowowowwooo",
+      "ooowwoowowowwooo",
+      "ooowwoowowowwooo",
+      "oooooooooooooooo",
+      ".oooooooooooooo.",
+      "..oooooooooooo..",
+      "...oooooooooo...",
+    ],
+  },
+  "Tencent": {
+    tile: null, pal: { b: "#0052D9" },
+    px: [
+      "................",
+      "......bb........",
+      "......bbbb......",
+      "bbbbbbbbbbbb....",
+      "bbbbbbbbbbbbbb..",
+      ".bbbbbbbbbbbbbbb",
+      "..bbbbbbbbbbbbb.",
+      ".....bbbbb......",
+      ".....bbbb.......",
+      "....bbbbb.......",
+      "....bbbb........",
+      "....bbbb........",
+      "...bbbbb........",
+      "...bbbb.........",
+      "...bbbb.........",
+      "................",
+    ],
+  },
+  "MiniMax": {
+    tile: null, pal: { p: "#E2167E", m: "#F0306A", o: "#FE603C" },
+    px: [
+      "................",
+      "........pp......",
+      ".......pmmp.....",
+      "...pp..pm.m.....",
+      "..pmmp.pm.m..oo.",
+      "..pm.m.pm.m.oo.o",
+      ".pm..m.pm.mmo..o",
+      "pm...m.pm..mo..o",
+      "m....mpm...mo..o",
+      ".....mpm...mo..o",
+      ".....mpm...mo.oo",
+      ".....mmo....ooo.",
+      "......oo........",
+      "................",
+      "................",
+      "................",
+    ],
+  },
+  "Meta": {
+    tile: null, pal: { d: "#0064E0", l: "#0082FB" },
+    px: [
+      "................",
+      "................",
+      "................",
+      "..ddddd..lllll..",
+      ".ddddddd.llllll.",
+      ".dd...ddlll..ll.",
+      "dd.....ddl....ll",
+      "dd.....lddl...ll",
+      "ll....ll.dd...ll",
+      "ll...ll...dd..ll",
+      "ll..lll...ddd.ll",
+      "lllll......ddlll",
+      ".lll........lll.",
+      "................",
+      "................",
+      "................",
+    ],
+  },
+  "Mistral AI": {
+    tile: null, pal: { a: "#FFD800", b: "#FFAF00", c: "#FF8205", d: "#FA500F", e: "#E10500" },
+    px: [
+      "................",
+      "................",
+      "..aaa......aaa..",
+      "..aaa......aaa..",
+      "..bbbbb..bbbbb..",
+      "..bbbbb..bbbbb..",
+      "..cccccccccccc..",
+      "..cccccccccccc..",
+      "..ddd..dd..ddd..",
+      "..ddd..dd..ddd..",
+      "eeeeee....eeeeee",
+      "eeeeee....eeeeee",
+      "................",
+      "................",
+      "................",
+      "................",
+    ],
+  },
+  "NVIDIA": {
+    tile: null, pal: { g: "#76B900", w: "#FFFFFF" },
+    px: [
+      "................",
+      "................",
+      "................",
+      "......gggggggggg",
+      "....ggwwgggggggg",
+      "..ggwwgggwwggggg",
+      ".gwwggwwggwwgggg",
+      "gwgggwggwggwgggg",
+      "gwggwgggwggwgggg",
+      ".gwggwwwgggwgggg",
+      "..gwwggggwwggggg",
+      "....ggwwwwgggggg",
+      "......gggggggggg",
+      "................",
+      "................",
+      "................",
+    ],
+  },
+  "Cognition": {
+    tile: "#000000", pal: { w: "#FFFFFF" },
+    px: [
+      "................",
+      ".....wwwwww.....",
+      "....wwwwwwww....",
+      "....wwwwwwww....",
+      ".ww..wwwwww..ww.",
+      "wwww........wwww",
+      "wwww.wwwwww.wwww",
+      ".ww.wwwwwwww.ww.",
+      ".ww.wwwwwwww.ww.",
+      "wwww.wwwwww.wwww",
+      "wwww........wwww",
+      ".ww..wwwwww..ww.",
+      "....wwwwwwww....",
+      "....wwwwwwww....",
+      ".....wwwwww.....",
+      "................",
+    ],
+  },
+  "Thinking Machines Lab": {
+    tile: "#000000", pal: { w: "#FFFFFF" },
+    px: [
+      "................",
+      "................",
+      ".wwwwwww........",
+      ".wwwwwww........",
+      "....ww..........",
+      "....ww..........",
+      "....ww.ww...ww..",
+      "....ww.www.www..",
+      "....ww.wwwwwww..",
+      "....ww.ww.w.ww..",
+      ".......ww...ww..",
+      ".......ww...ww..",
+      ".......ww...ww..",
+      "................",
+      "................",
+      "................",
+    ],
+  },
+};
+
+// Pre-rendered data URLs (one per size) for DOM <img>/background use.
+const cache = new Map();
+export function logoURL(maker, scale = 1) {
+  const key = maker + "@" + scale;
+  if (cache.has(key)) return cache.get(key);
+  const L = LOGOS[maker];
+  const c = document.createElement("canvas");
+  c.width = c.height = 16 * scale;
+  const g = c.getContext("2d");
+  if (L) {
+    if (L.tile) { g.fillStyle = L.tile; g.fillRect(0, 0, 16 * scale, 16 * scale); }
+    L.px.forEach((row, y) => [...row].forEach((ch, x) => { if (ch !== ".") { g.fillStyle = L.pal[ch]; g.fillRect(x * scale, y * scale, scale, scale); } }));
+  }
+  const url = c.toDataURL();
+  cache.set(key, url);
+  return url;
+}
+
+// Draw into an FB (core/fb.js) at x,y with integer scale.
+export function drawLogo(fb, x, y, maker, scale = 1) {
+  const L = LOGOS[maker];
+  if (!L) { fb.fill(x, y, 16 * scale, 16 * scale, "#555555"); return; }
+  if (L.tile) fb.fill(x, y, 16 * scale, 16 * scale, L.tile);
+  L.px.forEach((row, yy) => { for (let xx = 0; xx < 16; xx++) { const ch = row[xx]; if (ch !== ".") fb.fill(x + xx * scale, y + yy * scale, scale, scale, L.pal[ch]); } });
+}
+
+// 12x12 1-bit link icons for the header (same '.'/palette format as LOGOS).
+const ICONS = {
+  x: { pal: { w: "#FFFFFF" }, px: [
+    "ww........ww",
+    "www......www",
+    ".www....www.",
+    "..www..www..",
+    "...wwwwww...",
+    "....wwww....",
+    "....wwww....",
+    "...wwwwww...",
+    "..www..www..",
+    ".www....www.",
+    "www......www",
+    "ww........ww",
+  ] },
+  github: { pal: { w: "#FFFFFF" }, px: [
+    "...wwwwww...",
+    ".wwwwwwwwww.",
+    ".w.wwwwww.w.",
+    "ww..wwww..ww",
+    "w..........w",
+    "w..........w",
+    "w..........w",
+    "ww........ww",
+    "www......www",
+    ".w.ww..wwww.",
+    "..w....www..",
+    "....w..w....",
+  ] },
+};
+
+export function linkIcon(id, scale = 1) {
+  const key = "icon:" + id + "@" + scale;
+  if (cache.has(key)) return cache.get(key);
+  const L = ICONS[id];
+  const c = document.createElement("canvas");
+  c.width = c.height = L.px.length * scale;
+  const g = c.getContext("2d");
+  L.px.forEach((row, y) => [...row].forEach((ch, x) => { if (ch !== ".") { g.fillStyle = L.pal[ch]; g.fillRect(x * scale, y * scale, scale, scale); } }));
+  const url = c.toDataURL();
+  cache.set(key, url);
+  return url;
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- FT2-styled results site. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keygen Bench: How scoring works</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keygen Bench">
+<meta property="og:title" content="Keygen Bench: How scoring works">
+<meta property="og:description" content="55 AI models write keygen tunes in FastTracker II, scored from the audio. Top: glm-5-3 83.3, swe-2 80.3, gpt-5.6-luna 79.7.">
+<meta property="og:image" content="https://keygen.micr.dev/dist/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://keygen.micr.dev/scoring">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keygen Bench: How scoring works">
+<meta name="twitter:description" content="55 AI models write keygen tunes in FastTracker II, scored from the audio. Top: glm-5-3 83.3, swe-2 80.3, gpt-5.6-luna 79.7.">
+<meta name="twitter:image" content="https://keygen.micr.dev/dist/og/home.png">
+<meta name="description" content="55 AI models write keygen tunes in FastTracker II, scored from the audio. Top: glm-5-3 83.3, swe-2 80.3, gpt-5.6-luna 79.7.">
+<link rel="icon" type="image/png" href="/core/icons/keys.png">
+<link rel="stylesheet" href="/core/ft2.css">
+<style>
+  html, body { margin: 0; background: #000; min-height: 100%; }
+  #boot { color: #92BEFF; font: 12px ui-monospace, monospace; padding: 20px; }
+  /* Preloader (core/intro.js). --k is its integer pixel scale; the overlay adds a dark scanline per pixel row. */
+  #intro { position: fixed; inset: 0; z-index: 100; overflow: hidden; }
+  #intro canvas { display: block; image-rendering: pixelated; }
+  #intro::after { content: ""; position: absolute; inset: 0; pointer-events: none; transition: opacity 400ms ease-out;
+    background: repeating-linear-gradient(to bottom, transparent 0 calc(var(--k) - var(--scan)), rgb(0 0 0 / 0.3) 0 var(--k)); }
+  #intro.out { pointer-events: none; }
+  #intro.out::after { opacity: 0; }
+  #intro.fade { opacity: 0; transition: opacity 200ms ease-out; }
+  .intro-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+<link rel="canonical" href="https://keygen.micr.dev/scoring">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#4D619A">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://keygen.micr.dev/#site","name":"Keygen Bench","url":"https://keygen.micr.dev/","description":"Keygen Bench asks AI models to compose a keygen-style chiptune in FastTracker II, with no network and a Bash tool, three independent attempts each at its highest declared reasoning tier. A trusted FT2 render of each XM module is scored from the audio by craft-v7 (tonal organization, development, dynamics, signal, noise, loop and duration). Models are ranked by their best of three attempts."},{"@type":"Dataset","@id":"https://keygen.micr.dev/#results","name":"Keygen Bench results","description":"Keygen Bench asks AI models to compose a keygen-style chiptune in FastTracker II, with no network and a Bash tool, three independent attempts each at its highest declared reasoning tier. A trusted FT2 render of each XM module is scored from the audio by craft-v7 (tonal organization, development, dynamics, signal, noise, loop and duration). Models are ranked by their best of three attempts.","url":"https://keygen.micr.dev/rankings","dateModified":"2026-10-06T14:39:29.055045+00:00","creator":{"@type":"Person","name":"Microck","url":"https://github.com/Microck"},"isAccessibleForFree":true,"keywords":["AI benchmark","LLM benchmark","FastTracker II","chiptune","keygen music","XM module"],"variableMeasured":"craft-v7 score (0-100)","distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://keygen.micr.dev/dist/data.json"}]}]}</script>
+</head>
+<body>
+<noscript><main><h1>Keygen Bench: How scoring works</h1><p>55 AI models write keygen tunes in FastTracker II, scored from the audio. Top: glm-5-3 83.3, swe-2 80.3, gpt-5.6-luna 79.7.</p><p>Keygen Bench asks AI models to compose a keygen-style chiptune in FastTracker II, with no network and a Bash tool, three independent attempts each at its highest declared reasoning tier. A trusted FT2 render of each XM module is scored from the audio by craft-v7 (tonal organization, development, dynamics, signal, noise, loop and duration). Models are ranked by their best of three attempts.</p><p><a href="/rankings">Rankings</a> | <a href="/tracker">Tracker</a> | <a href="/scoring">Scoring</a> | <a href="/support">Support</a></p></main></noscript>
+<script src="/core/intro.js"></script>
+<div id="app"></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
