@@ -247,7 +247,7 @@
     },
     {
       "name": "qwen3.8-flash",
-      "maker": "Alibaba (Qwen)",
+      "maker": "Alibaba",
       "runs": 30,
       "usd": 22.6939,
       "unpriced_runs": 18,
@@ -262,7 +262,7 @@
     },
     {
       "name": "qwen3.8-max",
-      "maker": "Alibaba (Qwen)",
+      "maker": "Alibaba",
       "runs": 31,
       "usd": 17.7727,
       "unpriced_runs": 26,
@@ -607,7 +607,7 @@
     },
     {
       "name": "qwen3.6-plus",
-      "maker": "Alibaba (Qwen)",
+      "maker": "Alibaba",
       "runs": 4,
       "usd": 4.827,
       "unpriced_runs": 2,
@@ -712,7 +712,7 @@
     },
     {
       "name": "qwen3.7-max",
-      "maker": "Alibaba (Qwen)",
+      "maker": "Alibaba",
       "runs": 5,
       "usd": 2.1845,
       "unpriced_runs": 2,
@@ -772,7 +772,7 @@
     },
     {
       "name": "qwen3.7-plus",
-      "maker": "Alibaba (Qwen)",
+      "maker": "Alibaba",
       "runs": 12,
       "usd": 1.4457,
       "unpriced_runs": 1,

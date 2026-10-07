@@ -59,7 +59,7 @@ Results snapshot: 2026-10-07. Full data: https://keygen.micr.dev/dist/data.json.
 | 42 | [mistral-large-4](https://keygen.micr.dev/tracker/mistral-large-4) | Mistral AI | 58.5 | 18.3 / 58.5 / 18.9 |
 | 43 | [gpt-5-3-codex](https://keygen.micr.dev/tracker/gpt-5-3-codex) | OpenAI | 55.0 | 55.0 / 18.0 / 31.1 |
 | 44 | [glm-5-3-flash](https://keygen.micr.dev/tracker/glm-5-3-flash) | Zhipu (Z.ai) | 54.7 | 6.4 / 54.7 |
-| 45 | [qwen3.7-plus](https://keygen.micr.dev/tracker/qwen3.7-plus) | Alibaba (Qwen) | 50.7 | 4.2 / 10.8 / 50.7 |
+| 45 | [qwen3.7-plus](https://keygen.micr.dev/tracker/qwen3.7-plus) | Alibaba | 50.7 | 4.2 / 10.8 / 50.7 |
 | 46 | [minimax-m2.7](https://keygen.micr.dev/tracker/minimax-m2.7) | MiniMax | 48.4 | 32.4 / 48.4 / 15.8 |
 | 47 | [muse-glimmer-30b](https://keygen.micr.dev/tracker/muse-glimmer-30b) | Meta | 47.3 | 47.3 / 29.9 / 28.0 |
 | 48 | [swe-1-7-lightning](https://keygen.micr.dev/tracker/swe-1-7-lightning) | Cognition | 43.0 | 38.9 / 2.6 / 43.0 |
@@ -69,7 +69,7 @@ Results snapshot: 2026-10-07. Full data: https://keygen.micr.dev/dist/data.json.
 | 52 | [minimax-m3](https://keygen.micr.dev/tracker/minimax-m3) | MiniMax | 34.9 | 34.9 / 22.9 / 6.6 |
 | 53 | [mercury-2.5](https://keygen.micr.dev/tracker/mercury-2.5) | Inception | 30.3 | 30.3 / 19.2 |
 | 54 | [kimi-k2-7](https://keygen.micr.dev/tracker/kimi-k2-7) | Moonshot AI | 27.3 | 8.0 / 27.3 / 14.9 |
-| 55 | [qwen3.8-flash](https://keygen.micr.dev/tracker/qwen3.8-flash) | Alibaba (Qwen) | 23.0 | 7.0 / 1.6 / 23.0 |
+| 55 | [qwen3.8-flash](https://keygen.micr.dev/tracker/qwen3.8-flash) | Alibaba | 23.0 | 7.0 / 1.6 / 23.0 |
 | 56 | [nemotron-3-ultra](https://keygen.micr.dev/tracker/nemotron-3-ultra) | NVIDIA | 22.8 | 14.7 / 22.8 / 9.0 |
 | 57 | [command-a-plus-05-2026](https://keygen.micr.dev/tracker/command-a-plus-05-2026) | Cohere | 19.4 | 0.9 / 19.4 |
 | 58 | [north-mini-code](https://keygen.micr.dev/tracker/north-mini-code) | Cohere | 18.8 | 18.8 / 0.2 |

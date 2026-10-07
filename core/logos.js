@@ -150,7 +150,7 @@ export const LOGOS = {
       "................",
     ],
   },
-  "Alibaba (Qwen)": {
+  "Alibaba": {
     tile: null, pal: { o: "#FF6A00" },
     px: [
       "................",

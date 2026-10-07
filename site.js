@@ -412,7 +412,7 @@ export async function mount(root, ctx) {
     const m = r.module;
     V.pickHost.replaceChildren(
       h("div", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Company"),
-        dropdown({ label: "Company", items: makerItems(data), value: r.maker, width: 120, onChange: (mk) => ctx.go({ run: bestOf(mk).slug }), onHover: (mk) => prefetchXM(data, bestOf(mk)) })),
+        dropdown({ label: "Company", items: makerItems(data), value: r.maker, width: 120, onChange: (mk) => ctx.go({ run: newestOf(mk).slug }), onHover: (mk) => prefetchXM(data, newestOf(mk)) })),
       h("div", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Model"),
         dropdown({ label: "Model", items: modelItems(data, r.maker, r.slug), value: r.slug, width: 170, onChange: (s2) => ctx.go({ run: s2 }), onHover: (s2) => prefetchXM(data, data.bySlug[s2]) })),
       h("span", { class: "grow" }),
@@ -427,7 +427,8 @@ export async function mount(root, ctx) {
   }
   // "declared tier: max, 128k output" -> "max".
   const effort = (r) => String(r.tier ?? "-").replace(/^.*tier:\s*/i, "").split(",")[0].trim();
-  const bestOf = (maker) => data.makers.find((x) => x.name === maker).runs.find((x) => x.isBest);
+  // A company pick opens its newest model (the first Model menu entry), at that model's best attempt.
+  const newestOf = (maker) => data.bySlug[modelItems(data, maker, null)[0].value];
   // Switch the viewer to run `s2`. The pickers, info and score card come from data.json, so they switch at
   // once; the old tune stops and the pattern editor shows the new run's empty channels until its module is
   // parsed (usually already cached by a prefetch). The MP3 downloads alongside the module. If a tune was
@@ -852,8 +853,12 @@ export async function mount(root, ctx) {
     ghost.classList.add("ghost");
     const srcC = main.querySelectorAll("canvas");
     ghost.querySelectorAll("canvas").forEach((c, i) => { const s2 = srcC[i]; if (s2?.width) { c.width = s2.width; c.height = s2.height; c.getContext("2d").drawImage(s2, 0, 0); } });
+    // cloneNode resets scroll positions: copy them so scrolled lists (Rankings) leave from where they were.
+    const scrolled = [...main.querySelectorAll("*")].map((el, i) => [i, el.scrollTop, el.scrollLeft]).filter(([, t, l]) => t || l);
     ghost.style.cssText = main.style.cssText + `;position:absolute;left:${main.offsetLeft}px;top:${main.offsetTop}px;width:${main.offsetWidth}px;height:${main.offsetHeight}px;`;
     shell.append(ghost);
+    const ghostAll = ghost.querySelectorAll("*");
+    for (const [i, t, l] of scrolled) { ghostAll[i].scrollTop = t; ghostAll[i].scrollLeft = l; }
     renderPage();
     const total = slide({ outs: topPanels(ghost), ins: topPanels(main), dir, root: main });
     setTimeout(() => {
