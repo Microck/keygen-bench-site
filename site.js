@@ -782,7 +782,7 @@ export async function mount(root, ctx) {
         h("div", { class: "well sunken", style: { flex: "1", display: "flex", flexDirection: "column" } },
           h("p", {}, "Fund a specific model: pick one from the wanted list and name it in your donation note."),
           h("p", {}, "Monthly support pays for testing new releases. One-off donations help keep future runs going."),
-          h("div", { class: "row donation-links", style: { marginTop: "auto" } }, h("a", { class: "btn cta", href: SITE.sponsors, target: "_blank", rel: "noopener" }, "GitHub Sponsors"), h("a", { class: "btn cta", href: SITE.kofi, target: "_blank", rel: "noopener" }, "Ko-fi")))),
+          h("div", { class: "row donation-links", style: { marginTop: "auto" } }, h("a", { class: "btn cta", href: SITE.sponsors, target: "_blank", rel: "noopener" }, "GitHub Sponsors"), h("a", { class: "btn cta", href: SITE.kofi, target: "_blank", rel: "noopener" }, "Ko-fi"), h("a", { class: "btn cta", href: "/crypto", target: "_blank", rel: "noopener" }, "Crypto")))),
       h("section", { class: "panel raised" }, h("h2", {}, SUPPORT.contribution.heading),
         h("div", { class: "well sunken", style: { flex: "1", display: "flex", flexDirection: "column" } },
           ...SUPPORT.contribution.paragraphs.map((p) => h("p", {}, p)),

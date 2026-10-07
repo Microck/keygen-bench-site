@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate with crypto - Keygen Bench</title>
+<meta name="description" content="Fund Keygen Bench runs with Bitcoin, Ethereum, Base, BNB Smart Chain, Solana, Tron, Monero or Zcash.">
+<link rel="canonical" href="https://keygen.micr.dev/crypto">
+<link rel="icon" type="image/png" href="/core/icons/keys.png">
+<link rel="stylesheet" href="/core/ft2.css">
+<style>
+  body { margin: 0; background: var(--desktop); color: var(--forgrnd); }
+  main { max-width: 760px; margin: 0 auto; padding: 16px 12px 32px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  h1 { margin: 0; font: 20px/20px "FT2 Big", monospace; text-shadow: 1px 1px 0 var(--dsktop2); }
+  a { color: var(--pattext); }
+  .ft2-text { font: 10px/11px "FT2", monospace; -webkit-font-smoothing: none; }
+  .back { font-size: 20px; line-height: 20px; }
+  .intro { margin: 12px 0 16px; font: 15px/1.5 system-ui, sans-serif; color: var(--dim); }
+  .card { display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 14px; align-items: center;
+          margin-bottom: 8px; padding: 12px; background: var(--desktop);
+          border: 1px solid; border-color: var(--dsktop1) var(--dsktop2) var(--dsktop2) var(--dsktop1); }
+  .qr { width: 148px; height: 148px; background: #fff; display: block; image-rendering: pixelated; }
+  h2 { margin: 0 0 2px; font: 20px/20px "FT2 Big", monospace; text-shadow: 1px 1px 0 var(--dsktop2); }
+  .net { margin: 0 0 8px; font: 14px/1.4 system-ui, sans-serif; color: var(--dim); }
+  .addr { display: flex; gap: 6px; align-items: stretch; }
+  code { flex: 1; min-width: 0; padding: 8px 10px; background: var(--bckgrnd); color: #fff;
+         font: 15px/1.45 ui-monospace, "SF Mono", Menlo, Consolas, monospace; overflow-wrap: anywhere;
+         user-select: all; border: 1px solid; border-color: var(--dsktop2) var(--dsktop1) var(--dsktop1) var(--dsktop2); }
+  button { flex: none; min-width: 64px; padding: 0 10px; cursor: pointer; background: var(--buttons); color: var(--btntext);
+           font: 15px/1 system-ui, sans-serif; border: 1px solid; border-color: var(--button1) var(--button2) var(--button2) var(--button1); }
+  button:active { border-color: var(--button2) var(--button1) var(--button1) var(--button2); }
+  button:focus-visible { outline: 2px dotted #fff; outline-offset: 2px; }
+  .warn { margin: 8px 0 0; font: 13px/1.4 system-ui, sans-serif; color: #FFD27A; }
+  footer { margin-top: 16px; font: 13px/1.5 system-ui, sans-serif; color: var(--dim); }
+  @media (max-width: 520px) { .card { grid-template-columns: 1fr; justify-items: center; } .card > div { width: 100%; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Donate with crypto</h1>
+    <a class="ft2-text back" href="/support">Back to Support</a>
+  </header>
+  <p class="intro">Donations pay for testing new models on Keygen Bench. Send only the listed coins on the listed networks to each address; anything else can be lost for good.</p>
+
+  <section class="card" aria-labelledby="btc">
+    <img class="qr" src="/core/crypto/btc.svg" alt="QR code for the Bitcoin address">
+    <div>
+      <h2 id="btc">Bitcoin (BTC)</h2>
+      <p class="net">Network: Bitcoin</p>
+      <div class="addr"><code>bc1qr89cu8adelwmhuqk6zsx5e0nqzx5dx3g4zz7ma</code><button type="button">Copy</button></div>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="evm">
+    <img class="qr" src="/core/crypto/evm.svg" alt="QR code for the Ethereum, Base and BNB Smart Chain address">
+    <div>
+      <h2 id="evm">ETH, BNB, USDC, USDT</h2>
+      <p class="net">Networks: Ethereum, Base, BNB Smart Chain (one address for all three)</p>
+      <div class="addr"><code>0x55ae26513C26BeD6d09495987f8323cffcB9836a</code><button type="button">Copy</button></div>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="sol">
+    <img class="qr" src="/core/crypto/sol.svg" alt="QR code for the Solana address">
+    <div>
+      <h2 id="sol">Solana (SOL)</h2>
+      <p class="net">Network: Solana (SOL and SPL tokens such as USDC)</p>
+      <div class="addr"><code>FmFtRaWfgjC8BNosjpcNy2H356gkankqbJsKvAqm4GGi</code><button type="button">Copy</button></div>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="trx">
+    <img class="qr" src="/core/crypto/trx.svg" alt="QR code for the Tron address">
+    <div>
+      <h2 id="trx">Tron (TRX)</h2>
+      <p class="net">Network: Tron (TRX and TRC-20 tokens such as USDT)</p>
+      <div class="addr"><code>TGJK8UgM44vVGA6hUhk9HYhr2eonvN2XKL</code><button type="button">Copy</button></div>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="xmr">
+    <img class="qr" src="/core/crypto/xmr.svg" alt="QR code for the Monero address">
+    <div>
+      <h2 id="xmr">Monero (XMR)</h2>
+      <p class="net">Network: Monero</p>
+      <div class="addr"><code>85JzVFEfV9XR8aHpNhR36AJfK6VbxjJTMMwSZPm63WggUSgQexdmRoPAYxew7ySc5rEpZPkkVAns3XhMymzTZSH5JKV8AVC</code><button type="button">Copy</button></div>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="zec">
+    <img class="qr" src="/core/crypto/zec.svg" alt="QR code for the Zcash address">
+    <div>
+      <h2 id="zec">Zcash (ZEC)</h2>
+      <p class="net">Network: Zcash (transparent address)</p>
+      <div class="addr"><code>t1atFiXMXsugFNjTfZbztuuCvTdTMr81JP5</code><button type="button">Copy</button></div>
+    </div>
+  </section>
+
+  <footer>Prefer a card? <a href="https://github.com/sponsors/Microck">GitHub Sponsors</a> or <a href="https://ko-fi.com/microck">Ko-fi</a>.</footer>
+</main>
+<script>
+  for (const button of document.querySelectorAll(".addr button")) {
+    button.addEventListener("click", async () => {
+      const text = button.previousElementSibling.textContent.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+        button.textContent = "Copied";
+      } catch {
+        getSelection().selectAllChildren(button.previousElementSibling);
+        button.textContent = "Press Ctrl+C";
+      }
+      setTimeout(() => { button.textContent = "Copy"; }, 2000);
+    });
+  }
+</script>
+</body>
+</html>
