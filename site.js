@@ -180,12 +180,6 @@ const CSS = `
   .vb .spend-row { display: grid; grid-template-columns: 16px minmax(0, 1fr) 48px 92px; height: auto !important; min-height: 24px; gap: 3px; }
   .vb .spend-model { overflow-wrap: anywhere; }
   .vb .wanted .wn { white-space: normal; overflow-wrap: anywhere; }
-  /* Module info beside the scopes: wider, and lines wrap instead of being cut off. */
-  .vb .track-info { width: 46% !important; white-space: normal !important; overflow-wrap: anywhere; }
-  /* Scoring: help subjects become a two-column button grid above the text instead of a narrow sidebar. */
-  .vb[data-page="scoring"] .page { grid-template-columns: minmax(0, 1fr) !important; grid-template-rows: auto minmax(60vh, 1fr) !important; }
-  .vb .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
-  .vb .toc > h2 { grid-column: 1 / -1; }
 }
 `;
 
@@ -284,7 +278,7 @@ export async function mount(root, ctx) {
       el.setAttribute("aria-pressed", "true");
     });
     const pickHost = h("div", { class: "row tracker-pickers", style: { gap: "4px" } });
-    const infoHost = h("div", { class: "sunken track-info", style: { width: "clamp(120px, 34%, 200px)", padding: "3px 4px", display: "grid", alignContent: "center", gap: "2px", whiteSpace: "nowrap", overflow: "hidden" } });
+    const infoHost = h("div", { class: "sunken", style: { width: "clamp(120px, 34%, 200px)", padding: "3px 4px", display: "grid", alignContent: "center", gap: "2px", whiteSpace: "nowrap", overflow: "hidden" } });
     const cardHost = h("section", { class: "panel raised" });
     const side = h("div", { class: "tracker-side", style: { gridColumn: "2", gridRow: "1 / span 3", display: "grid", gridTemplateRows: "auto minmax(0,1fr) minmax(0,1fr)", gap: "1px", minHeight: "0" } },
       cardHost,
@@ -545,10 +539,9 @@ export async function mount(root, ctx) {
     const top3 = h("section", { style: { gridColumn: "1", display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: "1px" } });
     main.replaceChildren(
       h("section", { class: "panel raised", style: { gridColumn: "1" } },
-        h("div", { class: "row", style: { gap: "4px", flexWrap: "wrap" } }, // Label and menu stay together when the toolbar wraps.
-          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Company"), makerDD),
-          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Show"), viewDD),
-          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Marker"), cmDD), h("span", { class: "grow" }), modeButtons), sortHelp),
+        h("div", { class: "row", style: { gap: "4px", flexWrap: "wrap" } }, h("span", { class: "shadow-text" }, "Company"), makerDD,
+          h("span", { class: "shadow-text" }, "Show"), viewDD,
+          h("span", { class: "shadow-text" }, "Marker"), cmDD, h("span", { class: "grow" }), modeButtons), sortHelp),
       top3,
       h("section", { class: "panel raised rank-table", style: { gridColumn: "1" } }, h("div", { class: "sunken ft2-scroll", style: { flex: "1", minHeight: "0", overflow: "auto" } }, h("table", { class: "lb" }, h("colgroup", {}, ...cols.map((c) => h("col", { class: "c-" + c.k }))), thead, tbody))),
       detail);
@@ -696,10 +689,10 @@ export async function mount(root, ctx) {
         ...PROMPTS.flatMap((p) => [head(p.title), h("pre", { class: "prompt sunken" }, p.text)])] },
       { id: "overview", label: "How it works", render: () => [head("How it works"), ...OVERVIEW.map(para),
         h("pre", { class: "formula" }, ["score = music points (up to 100)", "        x clean sound", "        x no broken samples", "        x clean loop", "        x long enough", "        then caps, rounded to 0.1"].join("\n"))] },
-      { id: "points", label: "Music points", render: () => SCORING.filter((m) => m.kind === "points").flatMap(measure) },
-      { id: "checks", label: "Checks", render: () => SCORING.filter((m) => m.kind !== "points").flatMap(measure) },
-      { id: "example", label: "Worked example", render: () => [head("Worked example"), para("Every run's score, step by step. Pick any run."), worked(exampleRun())] },
-      { id: "notes", label: "Fine print", render: () => SCORING_NOTES.flatMap((n) => [head(n.title), para(n.text),
+      { id: "points", label: "What earns points", render: () => SCORING.filter((m) => m.kind === "points").flatMap(measure) },
+      { id: "checks", label: "What costs points", render: () => SCORING.filter((m) => m.kind !== "points").flatMap(measure) },
+      { id: "example", label: "Example run", render: () => [head("Example run"), para("Every run's score, step by step. Pick any run."), worked(exampleRun())] },
+      { id: "notes", label: "Caveats", render: () => SCORING_NOTES.flatMap((n) => [head(n.title), para(n.text),
         n.id === "flags" ? h("table", { class: "plain" }, ...Object.entries(data.flag_rules).filter(([kk]) => kk !== "RAW_XM").map(([kk, v]) => h("tr", {}, h("td", { style: { color: "#FFAA00", whiteSpace: "nowrap", verticalAlign: "top" } }, SHORT[kk] ?? kk), h("td", { style: { color: "#fff" } }, v)))) : null]) },
     ];
     const toc = h("nav", { class: "panel raised toc", "aria-label": "Sections" }, h("h2", {}, "Help subjects"));

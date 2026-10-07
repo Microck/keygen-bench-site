@@ -30,7 +30,7 @@ export const KEYGEN = {
 };
 
 export const DISCLAIMER = {
-  title: "A guide, not a verdict",
+  title: "Treat it as a guide",
   lines: [
     "Music can't be judged objectively. One person's favourite tune can grate on someone else, and both are right.",
     "So this score does not say which model makes the best music. It measures things that can be counted from the audio: whether the notes fit a key, whether the tune develops instead of repeating, whether it loops cleanly, and whether it plays without technical faults.",
@@ -105,20 +105,20 @@ export const SCORING = [
 ];
 
 export const SCORING_NOTES = [
-  { id: "calibration", title: "Tuned on real keygen music", text: "The tonal, noise, DC-offset and loop level and tone thresholds were set from half of 256 real keygen tunes from the Keygenmusic archive and checked on the other half, so a normal keygen tune isn't penalised for sounding like a normal keygen tune. The loop click, gap and rhythm thresholds were not recalibrated. The 30-second length is from a separate sample of 256 tunes." },
+  { id: "calibration", title: "Calibrated on real keygens", text: "The tonal, noise, DC-offset and loop level and tone thresholds were set from half of 256 real keygen tunes from the Keygenmusic archive and checked on the other half, so a normal keygen tune isn't penalised for sounding like a normal keygen tune. The loop click, gap and rhythm thresholds were not recalibrated. The 30-second length is from a separate sample of 256 tunes." },
   { id: "judges", title: "No judges", text: "No people and no AI rate the tunes. The same fixed rules score every model, with no special cases." },
   { id: "flags", title: "Flags are notes, not penalties", text: "Flags point out something worth listening for, like a masked melody. Only the checks and caps above change the score." },
-  { id: "cost", title: "What cost means", text: "Estimated from the tokens each run used, at the maker prices supplied with the publication. It's what the run would cost at those prices, not what was billed. Models without a published API price show n/a." },
+  { id: "cost", title: "How cost is estimated", text: "Estimated from the tokens each run used, at the maker prices supplied with the publication. It's what the run would cost at those prices, not what was billed. Models without a published API price show n/a." },
 ];
 
 // Setup page copy. Sources: benchmark/run.py, benchmark/Dockerfile, benchmark/campaign.py, benchmark/README.md,
 // the current launch config (limits) and benchmark/prompts/*.txt.
 export const SETUP = [
-  { title: "The agent", lines: [
+  { title: "Who plays", lines: [
     "Every model runs in the same harness: mini-swe-agent 2.4.6, with one bash tool. Each reply is one step, and every command in it runs in order in a fresh shell in /workspace. Files and the running FastTracker II session persist between commands.",
     "Command output over 20,000 bytes shows only its first and last 10,000 bytes. Every result ends with the minutes left.",
   ] },
-  { title: "The sandbox", lines: [
+  { title: "Where it runs", lines: [
     "An offline Docker container (Debian bookworm-slim, pinned): no network, no credentials, no coding-agent client, no skills. It has bash, Python 3, NumPy and FastTracker II.",
     "FastTracker II is the ft2-clone, built from a pinned commit, driven through an ft2 command that exposes samples, named instruments, patterns, order, tempo, save and render. Envelopes and note-to-sample mapping aren't available, so sounds are shaped in the sample data itself.",
     "The model can't hear anything. It can render to WAV and inspect the audio with NumPy.",
