@@ -2,7 +2,7 @@
 
 > Keygen Bench asks AI models to compose a keygen-style chiptune in FastTracker II, with no network and a Bash tool, three independent attempts each at its highest declared reasoning tier. A trusted FT2 render of each XM module is scored from the audio by craft-v7 (tonal organization, development, dynamics, signal, noise, loop and duration). Models are ranked by their best of three attempts.
 
-Results snapshot: 2026-10-06. Full data: https://keygen.micr.dev/dist/data.json. Source and every run: https://github.com/Microck/keygen-bench
+Results snapshot: 2026-10-07. Full data: https://keygen.micr.dev/dist/data.json. Source and every run: https://github.com/Microck/keygen-bench
 
 ## Pages
 
