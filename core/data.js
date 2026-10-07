@@ -167,7 +167,7 @@ export function prefetchXM(data, run) {
 // Media paths are relative to data.json, or absolute when a publication serves media from another host.
 export const mediaUrl = (data, path) => (/^https?:\/\//.test(path) ? path : data.base + path);
 
-export const money = (v) => (v == null ? "n/a" : v < 0.01 ? "<$0.01" : "$" + v.toFixed(2));
+export const money = (v) => (v == null ? "n/a" : v === 0 ? "$0" : v < 0.01 ? "<$0.01" : "$" + v.toFixed(2));
 export const usd = (v) => "$" + Math.round(v).toLocaleString("en-US");
 export const tokens = (v) => (v == null ? "n/a" : v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "k" : String(v));
 export const mmss = (s) => (s == null ? "--:--" : `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`);
