@@ -108,7 +108,7 @@ export const LOGOS = {
       "................",
     ],
   },
-  "Zhipu (Z.ai)": {
+  "Zhipu": {
     tile: null, pal: { k: "#2D2D2D", w: "#FFFFFF" },
     px: [
       "................",
