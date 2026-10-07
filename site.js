@@ -14,7 +14,6 @@ import { MARKERS, MARKER_CSS, CONSISTENCY_HELP, consistencyTitle } from "./core/
 import { linkIcon } from "./core/logos.js";
 
 const SHORT = { SUSTAINED_NOISE: "NOISE", PHRASE_SAMPLE: "PHRASE", SAMPLE_HEAVY: "SMP", TAIL_SILENCE: "TAIL", MASKED: "MASK", SILENCE: "SIL" };
-const rangeText = (range) => `$${(Math.floor(range.min * 100) / 100).toFixed(2)}-$${(Math.ceil(range.max * 100) / 100).toFixed(2)}`;
 const upperCostText = (range) => money(Math.ceil(range.max * 100) / 100);
 const costText = (run) => run.cost_range_usd ? upperCostText(run.cost_range_usd) : run.cost_usd != null ? money(run.cost_usd) : "Unknown";
 const modelCostText = (model) => costText(model.totalCost);
@@ -738,12 +737,14 @@ export async function mount(root, ctx) {
   // ---------------- Support ----------------
   // Hover note for the spend total: the attempt count, the ledger's basis, then coverage and the price caveat.
   const spendTip = (l) => [
-    `${l.runs} recorded attempts.`,
-    l.basis,
-    `${l.bounded_runs ?? 0} attempts have bounded estimates; ${l.unknown_cost_runs ?? l.unpriced_runs} have missing or incomplete evidence.`,
-    l.recorded_usage_cost_range_usd ? `Recorded usage range: ${rangeText(l.recorded_usage_cost_range_usd)}. Missing usage is excluded; this is not a lifetime-spend upper bound.` : null,
+    `Every run I've paid for: ${l.runs} in total.`,
+    "That includes failed, retried, unpublished and older runs, not just the ones on the board.",
+    "",
+    "Cost = tokens used x published API price.",
+    "Some runs went through subscriptions (OAuth) instead of the paid API, so they cost me less than this. A subscription still costs money, though.",
+    "",
     "An estimate at list price, not an actual bill.",
-  ].filter(Boolean).join("\n");
+  ].join("\n");
   function support() {
     main.style.gridTemplateColumns = "minmax(0,1fr) minmax(0,1fr)";
     main.style.gridTemplateRows = "auto auto minmax(0,1fr)";
