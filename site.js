@@ -180,6 +180,12 @@ const CSS = `
   .vb .spend-row { display: grid; grid-template-columns: 16px minmax(0, 1fr) 48px 92px; height: auto !important; min-height: 24px; gap: 3px; }
   .vb .spend-model { overflow-wrap: anywhere; }
   .vb .wanted .wn { white-space: normal; overflow-wrap: anywhere; }
+  /* Module info beside the scopes: wider, and lines wrap instead of being cut off. */
+  .vb .track-info { width: 46% !important; white-space: normal !important; overflow-wrap: anywhere; }
+  /* Scoring: help subjects become a two-column button grid above the text instead of a narrow sidebar. */
+  .vb[data-page="scoring"] .page { grid-template-columns: minmax(0, 1fr) !important; grid-template-rows: auto minmax(60vh, 1fr) !important; }
+  .vb .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
+  .vb .toc > h2 { grid-column: 1 / -1; }
 }
 `;
 
@@ -278,7 +284,7 @@ export async function mount(root, ctx) {
       el.setAttribute("aria-pressed", "true");
     });
     const pickHost = h("div", { class: "row tracker-pickers", style: { gap: "4px" } });
-    const infoHost = h("div", { class: "sunken", style: { width: "clamp(120px, 34%, 200px)", padding: "3px 4px", display: "grid", alignContent: "center", gap: "2px", whiteSpace: "nowrap", overflow: "hidden" } });
+    const infoHost = h("div", { class: "sunken track-info", style: { width: "clamp(120px, 34%, 200px)", padding: "3px 4px", display: "grid", alignContent: "center", gap: "2px", whiteSpace: "nowrap", overflow: "hidden" } });
     const cardHost = h("section", { class: "panel raised" });
     const side = h("div", { class: "tracker-side", style: { gridColumn: "2", gridRow: "1 / span 3", display: "grid", gridTemplateRows: "auto minmax(0,1fr) minmax(0,1fr)", gap: "1px", minHeight: "0" } },
       cardHost,
@@ -539,9 +545,10 @@ export async function mount(root, ctx) {
     const top3 = h("section", { style: { gridColumn: "1", display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: "1px" } });
     main.replaceChildren(
       h("section", { class: "panel raised", style: { gridColumn: "1" } },
-        h("div", { class: "row", style: { gap: "4px", flexWrap: "wrap" } }, h("span", { class: "shadow-text" }, "Company"), makerDD,
-          h("span", { class: "shadow-text" }, "Show"), viewDD,
-          h("span", { class: "shadow-text" }, "Marker"), cmDD, h("span", { class: "grow" }), modeButtons), sortHelp),
+        h("div", { class: "row", style: { gap: "4px", flexWrap: "wrap" } }, // Label and menu stay together when the toolbar wraps.
+          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Company"), makerDD),
+          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Show"), viewDD),
+          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Marker"), cmDD), h("span", { class: "grow" }), modeButtons), sortHelp),
       top3,
       h("section", { class: "panel raised rank-table", style: { gridColumn: "1" } }, h("div", { class: "sunken ft2-scroll", style: { flex: "1", minHeight: "0", overflow: "auto" } }, h("table", { class: "lb" }, h("colgroup", {}, ...cols.map((c) => h("col", { class: "c-" + c.k }))), thead, tbody))),
       detail);
