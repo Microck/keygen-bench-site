@@ -7,6 +7,14 @@
   "release_date": "2026-09-01",
   "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
  },
+ "claude-haiku-4-5-20251001": {
+  "release_date": "2025-10-15",
+  "source_url": "https://www.anthropic.com/news/claude-haiku-4-5"
+ },
+ "claude-haiku-5-5": {
+  "release_date": "2026-10-07",
+  "source_url": "https://www.anthropic.com/claude-haiku-5-5"
+ },
  "claude-opus-4-5-20251101": {
   "release_date": "2025-11-24",
   "source_url": "https://www.anthropic.com/news/claude-opus-4-5"
