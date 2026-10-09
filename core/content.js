@@ -33,32 +33,32 @@ export const DISCLAIMER = {
   title: "Treat it as a guide",
   lines: [
     "Music can't be judged objectively. One person's favourite tune can grate on someone else, and both are right.",
-    "So this score does not say which model makes the best music. It measures things that can be counted from the audio: whether the notes fit a key, whether the tune develops instead of repeating, whether it loops cleanly, and whether it plays without technical faults.",
-    "Where music theory and taste disagree, the score goes with the theory. That's the most neutral option, but it isn't flawless. Treat the number as a guide, and listen for yourself.",
+    "The score measures pitched clarity, development, loudness variation and technical properties of the audio and module. It does not measure listener preference.",
+    "The rules favor some kinds of music. Comparing them with reference tracks does not prove that the ranking is fair. Use the score as a guide, and listen for yourself.",
   ],
 };
 
 export const OVERVIEW = [
-  "A score has two parts. First the tune earns up to 100 points for what the music contains. Then four checks look for faults.",
-  "Each check is a multiplier from 0 to 1, so it can only take points away. A tune with no faults keeps all its points, unless one of the two caps applies (see Checks).",
-  "The scorer is called craft-v7. The score is a heuristic built from the audio and the module, not a verdict on musical quality.",
+  "A score has two parts. First the tune earns up to 100 content points. Then signal integrity and loop continuity can reduce the total.",
+  "The total is multiplied by a signal factor between 0 and 1 and a loop factor between 0.75 and 1. Two artifact caps can limit the result further.",
+  "These fixed rules measure properties of the audio and module, not how good the music sounds to a listener.",
 ];
 
 // id, title, max (points or "x1.0" multiplier), plain summary, what earns credit, what loses it, details.
 export const SCORING = [
   {
-    id: "tonal", kind: "points", max: 50, title: "Tonal structure",
-    plain: "Do the notes fit together in a key?",
-    good: "Clear pitched notes that mostly stay in one key, using several different notes.",
-    bad: "Mostly noise or drums with no clear pitch, one note held forever, or notes scattered with no key.",
-    details: "Measured in 4-second windows and averaged over the time something is playing. Each window multiplies three things: how much of the sound is pitched (full at half), how well it fits one key (from chance level up to full at 95%), and how many different notes it uses (full at about four). Music that is chromatic on purpose can score lower here without being wrong.",
+    id: "tonal", kind: "points", max: 50, title: "Pitched clarity",
+    plain: "How much of the sound has a clear pitch?",
+    good: "Clearly pitched sound, including slow notes, chromatic melodies and sustained tones.",
+    bad: "Little detectable pitched sound. Noise-based music can score lower without being defective.",
+    details: "The detector measures captured harmonic power in short audio windows and averages it over active time. Half the power earns full credit. Key concentration and pitch variety are diagnostics, not penalties. A stationary tone can earn full clarity credit, but this says nothing about its development or musical merit.",
   },
   {
     id: "development", kind: "points", max: 40, title: "Development",
-    plain: "Does the tune go somewhere, or loop the same bar?",
-    good: "Short melodic ideas that come back changed: moved to other notes, varied, handed to other parts.",
-    bad: "Copy-pasted patterns. Exact repetition earns nothing here, and neither does changing only the instrument or volume.",
-    details: "The song is split into 16-row phrases. It looks for 4-note motifs that come back at least once, and for parts that change while keeping them: the shared motifs must cover at least half of the changed part. Credit is coverage x the square root of recurrence x development, so with no development there is no credit. Parts that just duplicate another channel count once.",
+    plain: "Do related ideas change across short and long passages?",
+    good: "Recognizable note and rhythm shapes with contrasting passages, including sparse ideas and ideas handed between channels.",
+    bad: "An unchanged short cycle provides no longer-scale development. Channel numbers, instrument slots and nonzero volume changes do not earn credit.",
+    details: "The scorer compares complete 4-, 8- and 16-beat passages. Each voice earns credit for its relationship to a changed idea and its contrast with the rest of the tune. Its contribution is squared similarity times contrast, averaged equally across voices, passages and the three passage lengths. Exact copies supply no transformation evidence. A steady accompaniment cannot establish development in an unrelated melody. Incomplete passages supply no evidence. Changes in timbre and music without recurring ideas can be missed.",
   },
   {
     id: "dynamics", kind: "points", max: 10, title: "Dynamics",
@@ -75,25 +75,11 @@ export const SCORING = [
     details: "Weighs clipping (35%), the share of silence (25%), DC offset (15%), the longest silent gap (15%) and peak level (10%). Loudness gets full credit from -30 LUFS up and falls to nothing at -60 LUFS; louder earns nothing extra.",
   },
   {
-    id: "noise", kind: "multiplier", title: "No broken samples",
-    plain: "Is there long hiss where there should be instruments?",
-    good: "Instruments that sound like instruments. Short noisy drums and hi-hats are fine.",
-    bad: "Long stretches of static, the usual sign of a sample written in the wrong format.",
-    details: "Sustained means noisy stretches of a quarter second or longer. No penalty until a quarter of the tune is sustained noise, which is typical of real keygen tracks. Above that the multiplier falls steadily, reaching zero when the whole tune is noise.",
-  },
-  {
     id: "loop", kind: "multiplier", title: "Clean loop",
     plain: "Keygen tunes repeat forever. Does the restart sound seamless?",
     good: "The end flows back into the start without a click, gap, volume jump or broken rhythm.",
     bad: "A click, silence or stumble every time it restarts.",
     details: "FT2 plays each tune continuously and every restart is measured for clicks, gaps, level jumps, broken rhythm and tone change. The worst one counts. A tune that never restarts gets the lowest loop quality. This check can take away at most a quarter of the score.",
-  },
-  {
-    id: "duration", kind: "multiplier", title: "Long enough",
-    plain: "Is there at least 30 seconds of music before it repeats?",
-    good: "30 seconds or more of audible music. Longer tunes get no bonus.",
-    bad: "A very short loop. A 15-second tune keeps half its points. Silent padding doesn't count.",
-    details: "30 seconds is near the short end of 256 real keygen tunes (only 1 in 20 is shorter), whose typical length is about 1:46.",
   },
   {
     id: "caps", kind: "cap", title: "Caps",
@@ -105,7 +91,7 @@ export const SCORING = [
 ];
 
 export const SCORING_NOTES = [
-  { id: "calibration", title: "Calibrated on real keygens", text: "The tonal, noise, DC-offset and loop level and tone thresholds were set from half of 256 real keygen tunes from the Keygenmusic archive and checked on the other half, so a normal keygen tune isn't penalised for sounding like a normal keygen tune. The loop click, gap and rhythm thresholds were not recalibrated. The 30-second length is from a separate sample of 256 tunes." },
+  { id: "calibration", title: "Reference measurements", text: "The pitched-power, DC-offset and loop level and tone bounds come from archived keygen tunes, not listener ratings. A clear sustained tone can earn all 50 pitched-clarity points without development credit. Duration, sustained noisiness, key concentration and pitch variety are diagnostics, with no separate score multiplier." },
   { id: "judges", title: "No judges", text: "No people and no AI rate the tunes. The same fixed rules score every model, with no special cases." },
   { id: "flags", title: "Flags are notes, not penalties", text: "Flags point out something worth listening for, like a masked melody. Only the checks and caps above change the score." },
   { id: "cost", title: "How cost is estimated", text: "Estimated from the tokens each run used, at the maker prices supplied with the publication. It's what the run would cost at those prices, not what was billed. Models without a published API price show n/a." },

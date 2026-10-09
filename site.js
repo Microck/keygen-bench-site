@@ -180,6 +180,12 @@ const CSS = `
   .vb .spend-row { display: grid; grid-template-columns: 16px minmax(0, 1fr) 48px 92px; height: auto !important; min-height: 24px; gap: 3px; }
   .vb .spend-model { overflow-wrap: anywhere; }
   .vb .wanted .wn { white-space: normal; overflow-wrap: anywhere; }
+  /* Module info beside the scopes: wider, and lines wrap instead of being cut off. */
+  .vb .track-info { width: 46% !important; white-space: normal !important; overflow-wrap: anywhere; }
+  /* Scoring: help subjects become a two-column button grid above the text instead of a narrow sidebar. */
+  .vb[data-page="scoring"] .page { grid-template-columns: minmax(0, 1fr) !important; grid-template-rows: auto minmax(60vh, 1fr) !important; }
+  .vb .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
+  .vb .toc > h2 { grid-column: 1 / -1; }
 }
 `;
 
@@ -231,7 +237,7 @@ export async function mount(root, ctx) {
   const meter = (v, max, color) => h("div", { class: "meter sunken" }, h("i", { style: { width: `calc(${Math.max(0, Math.min(1, v / max)) * 100}% - 1px)`, background: color ?? "var(--pattext)" } }));
 
   function scoreCard(r, { compact = false } = {}) {
-    const parts = [["Tonal", r.parts.tonal_organization, 50], ["Develop.", r.parts.development, 40], ["Dynamics", r.parts.dynamics, 10]];
+    const parts = [["Pitch", r.parts.tonal_organization, 50], ["Develop.", r.parts.development, 40], ["Dynamics", r.parts.dynamics, 10]];
     const f = r.factors;
     return [
       h("div", { class: "row", style: { gap: "4px", padding: "1px 1px 0" } },
@@ -239,7 +245,7 @@ export async function mount(root, ctx) {
       h("div", { class: "shadow-text card-name", style: { padding: "0 1px" } }, nameOf(r)),
       h("div", { class: "sunken", style: { padding: "3px 4px", display: "grid", gridTemplateColumns: "auto 1fr auto", gap: "2px 6px", alignItems: "center" } },
         ...parts.flatMap(([kk, v, m]) => [h("span", { class: "muted" }, kk), meter(v, m), h("span", { style: { textAlign: "right" } }, `${v.toFixed(1)}/${m}`)]),
-        ...[["Signal", f.signal_integrity], ["Noise", f.noise_integrity], ["Loop", f.loop_continuity], ["Duration", f.duration_sufficiency]]
+        ...[["Signal", f.signal_integrity], ["Loop", f.loop_continuity]]
           .flatMap(([kk, v]) => [h("span", { class: "muted" }, kk), meter(v, 1, v < 0.8 ? "#FFAA00" : null), h("span", { style: { textAlign: "right" } }, "x" + v.toFixed(3))])),
       compact ? null : h("dl", { class: "kv sunken" },
         h("dt", { title: bestRankHelp }, "Best rank"), h("dd", { title: bestRankHelp }, rankText(r)),
@@ -278,7 +284,7 @@ export async function mount(root, ctx) {
       el.setAttribute("aria-pressed", "true");
     });
     const pickHost = h("div", { class: "row tracker-pickers", style: { gap: "4px" } });
-    const infoHost = h("div", { class: "sunken", style: { width: "clamp(120px, 34%, 200px)", padding: "3px 4px", display: "grid", alignContent: "center", gap: "2px", whiteSpace: "nowrap", overflow: "hidden" } });
+    const infoHost = h("div", { class: "sunken track-info", style: { width: "clamp(120px, 34%, 200px)", padding: "3px 4px", display: "grid", alignContent: "center", gap: "2px", whiteSpace: "nowrap", overflow: "hidden" } });
     const cardHost = h("section", { class: "panel raised" });
     const side = h("div", { class: "tracker-side", style: { gridColumn: "2", gridRow: "1 / span 3", display: "grid", gridTemplateRows: "auto minmax(0,1fr) minmax(0,1fr)", gap: "1px", minHeight: "0" } },
       cardHost,
@@ -539,9 +545,10 @@ export async function mount(root, ctx) {
     const top3 = h("section", { style: { gridColumn: "1", display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: "1px" } });
     main.replaceChildren(
       h("section", { class: "panel raised", style: { gridColumn: "1" } },
-        h("div", { class: "row", style: { gap: "4px", flexWrap: "wrap" } }, h("span", { class: "shadow-text" }, "Company"), makerDD,
-          h("span", { class: "shadow-text" }, "Show"), viewDD,
-          h("span", { class: "shadow-text" }, "Marker"), cmDD, h("span", { class: "grow" }), modeButtons), sortHelp),
+        h("div", { class: "row", style: { gap: "4px", flexWrap: "wrap" } }, // Label and menu stay together when the toolbar wraps.
+          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Company"), makerDD),
+          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Show"), viewDD),
+          h("span", { class: "picker-field" }, h("span", { class: "shadow-text" }, "Marker"), cmDD), h("span", { class: "grow" }), modeButtons), sortHelp),
       top3,
       h("section", { class: "panel raised rank-table", style: { gridColumn: "1" } }, h("div", { class: "sunken ft2-scroll", style: { flex: "1", minHeight: "0", overflow: "auto" } }, h("table", { class: "lb" }, h("colgroup", {}, ...cols.map((c) => h("col", { class: "c-" + c.k }))), thead, tbody))),
       detail);
@@ -647,8 +654,7 @@ export async function mount(root, ctx) {
     // Live embed under each measure: where every ranked model lands on it, plus the extremes to listen to.
     const MEASURE = {
       tonal: (r) => r.parts.tonal_organization, development: (r) => r.parts.development, dynamics: (r) => r.parts.dynamics,
-      integrity: (r) => r.factors.signal_integrity, noise: (r) => r.factors.noise_integrity,
-      loop: (r) => r.factors.loop_continuity, duration: (r) => r.factors.duration_sufficiency,
+      integrity: (r) => r.factors.signal_integrity, loop: (r) => r.factors.loop_continuity,
     };
     function embed(m) {
       const pool = data.runs.filter((r) => r.rank);
@@ -688,7 +694,7 @@ export async function mount(root, ctx) {
       { id: "prompts", label: "Prompts", render: () => [head("Prompts"), para("Every model gets exactly these two prompts, word for word, with this campaign's limits filled in."),
         ...PROMPTS.flatMap((p) => [head(p.title), h("pre", { class: "prompt sunken" }, p.text)])] },
       { id: "overview", label: "How it works", render: () => [head("How it works"), ...OVERVIEW.map(para),
-        h("pre", { class: "formula" }, ["score = music points (up to 100)", "        x clean sound", "        x no broken samples", "        x clean loop", "        x long enough", "        then caps, rounded to 0.1"].join("\n"))] },
+        h("pre", { class: "formula" }, ["score = music points (up to 100)", "        x clean sound", "        x clean loop", "        then caps, rounded to 0.1"].join("\n"))] },
       { id: "points", label: "What earns points", render: () => SCORING.filter((m) => m.kind === "points").flatMap(measure) },
       { id: "checks", label: "What costs points", render: () => SCORING.filter((m) => m.kind !== "points").flatMap(measure) },
       { id: "example", label: "Example run", render: () => [head("Example run"), para("Every run's score, step by step. Pick any run."), worked(exampleRun())] },
@@ -713,14 +719,12 @@ export async function mount(root, ctx) {
     const render = (run) => {
       const f = run.factors;
       const rows = [
-        ["Tonal structure", `${run.parts.tonal_organization.toFixed(1)} / 50`],
+        ["Pitched clarity", `${run.parts.tonal_organization.toFixed(1)} / 50`],
         ["Development", `${run.parts.development.toFixed(1)} / 40`],
         ["Dynamics", `${run.parts.dynamics.toFixed(1)} / 10`],
         ["= music points", `${run.content.toFixed(1)} / 100`],
         ["Clean sound", "x" + f.signal_integrity.toFixed(2)],
-        ["No broken samples", "x" + f.noise_integrity.toFixed(2)],
         ["Clean loop", "x" + f.loop_continuity.toFixed(2)],
-        ["Long enough", "x" + f.duration_sufficiency.toFixed(2) + ` (${(run.audio.duration ?? 0).toFixed(0)} s)`],
         ...(run.caps.length && run.uncapped != null ? [["Before caps", run.uncapped.toFixed(1)]] : []),
         ["= score", run.score.toFixed(1) + (run.caps.length ? " (capped)" : "")],
       ];
