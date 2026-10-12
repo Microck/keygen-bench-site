@@ -314,5 +314,13 @@
  "grok-composer-2.5-fast": {
   "release_date": "2026-06-03",
   "source_url": "https://x.ai/news"
+ },
+ "step-5-preview": {
+  "release_date": "2026-10-08",
+  "source_url": "https://openrouter.ai/stepfun/step-5-preview"
+ },
+ "mimo-v2.6-flash": {
+  "release_date": "2026-09-21",
+  "source_url": "https://openrouter.ai/xiaomi/mimo-v2.6-flash"
  }
 }
