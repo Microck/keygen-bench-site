@@ -290,5 +290,29 @@
  "swe-2": {
   "release_date": "2026-09-10",
   "source_url": "https://cognition.com/blog/swe-2"
+ },
+ "grok-4.20-0309-reasoning": {
+  "release_date": "2026-03-09",
+  "source_url": "https://docs.x.ai/developers/release-notes"
+ },
+ "grok-4.20-0309-non-reasoning": {
+  "release_date": "2026-03-09",
+  "source_url": "https://docs.x.ai/developers/release-notes"
+ },
+ "grok-4.3": {
+  "release_date": "2026-04-30",
+  "source_url": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing"
+ },
+ "grok-build": {
+  "release_date": "2026-05-27",
+  "source_url": "https://x.ai/news"
+ },
+ "grok-build-0.1": {
+  "release_date": "2026-05-27",
+  "source_url": "https://docs.x.ai/developers/release-notes"
+ },
+ "grok-composer-2.5-fast": {
+  "release_date": "2026-06-03",
+  "source_url": "https://x.ai/news"
  }
 }
