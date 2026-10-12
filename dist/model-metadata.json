@@ -108,8 +108,8 @@
   "source_url": "https://x.com/Zai_org/status/2065704919299235870"
  },
  "glm-5.3-flash": {
-  "release_date": null,
-  "source_url": "https://autoclaw.z.ai/blog/model/glm-5.3-flash/"
+  "release_date": "2026-08-26",
+  "source_url": "https://z.ai/blog/glm-5.3-flash"
  },
  "gpt-5-3-codex": {
   "release_date": "2026-02-05",
@@ -322,5 +322,9 @@
  "mimo-v2.6-flash": {
   "release_date": "2026-09-21",
   "source_url": "https://openrouter.ai/xiaomi/mimo-v2.6-flash"
+ },
+ "kimi-k2.7": {
+  "release_date": "2026-06-12",
+  "source_url": "https://www.kimi.com/en/resources/kimi-k2-7-code"
  }
 }
