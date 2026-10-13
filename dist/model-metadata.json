@@ -326,5 +326,13 @@
  "kimi-k2.7": {
   "release_date": "2026-06-12",
   "source_url": "https://www.kimi.com/en/resources/kimi-k2-7-code"
+ },
+ "longcat-2.5-preview": {
+  "release_date": "2026-09-25",
+  "source_url": "https://longcat.chat/platform/docs/"
+ },
+ "mimo-v2.5": {
+  "release_date": "2026-04-22",
+  "source_url": "https://openrouter.ai/xiaomi/mimo-v2.5"
  }
 }
