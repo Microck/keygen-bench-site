@@ -334,5 +334,9 @@
  "mimo-v2.5": {
   "release_date": "2026-04-22",
   "source_url": "https://openrouter.ai/xiaomi/mimo-v2.5"
+ },
+ "gemini-4-argon": {
+  "release_date": "2026-09-30",
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon"
  }
 }

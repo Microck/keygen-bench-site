@@ -49,50 +49,51 @@ Results snapshot: 2026-10-13. Full data: https://keygen.micr.dev/dist/data.json.
 | 32 | [mistral-large-4](https://keygen.micr.dev/tracker/mistral-large-4) | Mistral AI | 69.6 | 39.2 / 69.6 / 42.3 |
 | 33 | [gemini-3.7-flash](https://keygen.micr.dev/tracker/gemini-3.7-flash) | Google | 69.4 | 69.4 / 56.0 / 26.8 |
 | 34 | [grok-4-5](https://keygen.micr.dev/tracker/grok-4-5) | xAI | 69.2 | 33.7 / 29.5 / 69.2 |
-| 35 | [claude-haiku-4-5-20251001](https://keygen.micr.dev/tracker/claude-haiku-4-5-20251001) | Anthropic | 67.8 | 67.8 / 3.4 / 11.4 |
-| 36 | [deepseek-v4-flash](https://keygen.micr.dev/tracker/deepseek-v4-flash) | DeepSeek | 67.7 | 67.7 / 51.1 |
-| 37 | [grok-composer-2.5-fast](https://keygen.micr.dev/tracker/grok-composer-2.5-fast) | xAI | 67.6 | 50.9 / 26.6 / 67.6 |
-| 38 | [kimi-k2.7-code](https://keygen.micr.dev/tracker/kimi-k2.7-code) | Moonshot AI | 67.2 | 33.4 / 64.8 / 67.2 |
-| 39 | [swe-2](https://keygen.micr.dev/tracker/swe-2) | Cognition | 67.1 | 66.2 / 57.8 / 67.1 |
-| 40 | [hy3](https://keygen.micr.dev/tracker/hy3) | Tencent | 66.9 | 28.6 / 32.5 / 66.9 |
-| 41 | [gemini-3-flash-preview](https://keygen.micr.dev/tracker/gemini-3-flash-preview) | Google | 66.7 | 61.7 / 29.9 / 66.7 |
-| 42 | [gpt-5-4](https://keygen.micr.dev/tracker/gpt-5-4) | OpenAI | 66.2 | 36.8 / 66.2 / 47.9 |
-| 43 | [gemini-3.8-flash](https://keygen.micr.dev/tracker/gemini-3.8-flash) | Google | 66.1 | 37.9 / 52.2 / 66.1 |
-| 44 | [swe-1-7-lightning](https://keygen.micr.dev/tracker/swe-1-7-lightning) | Cognition | 65.9 | 65.9 / 22.1 / 59.0 |
-| 45 | [gemini-3.6-flash](https://keygen.micr.dev/tracker/gemini-3.6-flash) | Google | 65.3 | 31.3 / 65.3 / 49.6 |
-| 46 | [gpt-5.6-luna](https://keygen.micr.dev/tracker/gpt-5.6-luna) | OpenAI | 64.8 | 64.8 / 27.7 / 24.4 |
-| 47 | [gpt-5-3-codex](https://keygen.micr.dev/tracker/gpt-5-3-codex) | OpenAI | 64.0 | 64.0 / 28.5 / 52.5 |
-| 48 | [minimax-m3](https://keygen.micr.dev/tracker/minimax-m3) | MiniMax | 62.4 | 62.4 / 28.7 / 16.2 |
-| 49 | [muse-glimmer-30b](https://keygen.micr.dev/tracker/muse-glimmer-30b) | Meta | 61.9 | 61.9 / 52.1 / 50.7 |
-| 50 | [grok-4.20-0309-reasoning](https://keygen.micr.dev/tracker/grok-4.20-0309-reasoning) | xAI | 61.7 | 57.3 / 38.8 / 61.7 |
-| 51 | [claude-sonnet-4-6](https://keygen.micr.dev/tracker/claude-sonnet-4-6) | Anthropic | 61.5 | 61.5 / 37.1 / 32.4 |
-| 52 | [glm-5-3-flash](https://keygen.micr.dev/tracker/glm-5-3-flash) | Zhipu | 61.3 | 34.4 / 61.3 |
-| 53 | [qwen3.5-397b-a17b](https://keygen.micr.dev/tracker/qwen3.5-397b-a17b) | Alibaba | 58.8 | 58.8 / 15.5 / 31.5 |
-| 54 | [kimi-k2-6](https://keygen.micr.dev/tracker/kimi-k2-6) | Moonshot AI | 57.5 | 34.2 / 57.5 / 32.4 |
-| 55 | [hermes-4-405b](https://keygen.micr.dev/tracker/hermes-4-405b) | Nous Research | 57.0 | 57.0 / 40.4 |
-| 56 | [mimo-v2.5](https://keygen.micr.dev/tracker/mimo-v2.5) | Xiaomi | 55.4 | 25.4 / 55.4 / 29.8 |
-| 57 | [nemotron-3-ultra](https://keygen.micr.dev/tracker/nemotron-3-ultra) | NVIDIA | 55.3 | 52.6 / 55.3 / 24.7 |
-| 58 | [command-a-plus-05-2026](https://keygen.micr.dev/tracker/command-a-plus-05-2026) | Cohere | 55.1 | 33.0 / 55.1 |
-| 59 | [north-mini-code](https://keygen.micr.dev/tracker/north-mini-code) | Cohere | 54.2 | 54.2 / 9.1 |
-| 60 | [command-a-reasoning-08-2025](https://keygen.micr.dev/tracker/command-a-reasoning-08-2025) | Cohere | 53.8 | 53.8 |
-| 61 | [mercury-2.5](https://keygen.micr.dev/tracker/mercury-2.5) | Inception | 52.4 | 52.4 / 40.3 |
-| 62 | [longcat-2.5-preview](https://keygen.micr.dev/tracker/longcat-2.5-preview) | Meituan | 47.3 | 47.3 / 32.4 |
-| 63 | [claude-opus-4-5-20251101](https://keygen.micr.dev/tracker/claude-opus-4-5-20251101) | Anthropic | 43.6 | 35.7 / 19.3 / 43.6 |
-| 64 | [minimax-m2.7](https://keygen.micr.dev/tracker/minimax-m2.7) | MiniMax | 43.6 | 35.0 / 43.6 / 43.4 |
-| 65 | [grok-4.20-0309-non-reasoning](https://keygen.micr.dev/tracker/grok-4.20-0309-non-reasoning) | xAI | 41.6 | 9.7 / 41.6 |
-| 66 | [qwen3.7-plus](https://keygen.micr.dev/tracker/qwen3.7-plus) | Alibaba | 41.1 | 6.1 / 22.7 / 41.1 |
-| 67 | [gpt-5-4-mini](https://keygen.micr.dev/tracker/gpt-5-4-mini) | OpenAI | 40.9 | 28.4 / 40.9 / 23.2 |
-| 68 | [grok-4.3](https://keygen.micr.dev/tracker/grok-4.3) | xAI | 39.6 | 39.6 / 33.9 / 17.5 |
-| 69 | [inkling](https://keygen.micr.dev/tracker/inkling) | Thinking Machines Lab | 38.1 | 29.9 / 38.1 / 26.8 |
-| 70 | [grok-build-0.1](https://keygen.micr.dev/tracker/grok-build-0.1) | xAI | 36.6 | 31.1 / 36.6 / 28.8 |
-| 71 | [gemini-3.1-pro-preview](https://keygen.micr.dev/tracker/gemini-3.1-pro-preview) | Google | 36.2 | 30.8 / 21.6 / 36.2 |
-| 72 | [kimi-k2-7](https://keygen.micr.dev/tracker/kimi-k2-7) | Moonshot AI | 34.4 | 34.4 / 25.5 / 24.0 |
-| 73 | [qwen3.8-flash](https://keygen.micr.dev/tracker/qwen3.8-flash) | Alibaba | 34.4 | 34.4 / 20.6 / 32.1 |
-| 74 | [gpt-oss-120b](https://keygen.micr.dev/tracker/gpt-oss-120b) | OpenAI | 33.9 | 29.1 / 33.9 |
-| 75 | [gpt-oss-20b](https://keygen.micr.dev/tracker/gpt-oss-20b) | OpenAI | 33.8 | 33.8 / 17.3 |
-| 76 | [qwen3.8-27b](https://keygen.micr.dev/tracker/qwen3.8-27b) | Alibaba | 33.2 | 33.2 |
-| 77 | [nemotron-3.5-lightning](https://keygen.micr.dev/tracker/nemotron-3.5-lightning) | NVIDIA | 31.2 | 31.2 |
-| 78 | [grok-build](https://keygen.micr.dev/tracker/grok-build) | xAI | 31.0 | 31.0 / 23.2 / 20.9 |
-| 79 | [nemotron-3-super-120b-a12b](https://keygen.micr.dev/tracker/nemotron-3-super-120b-a12b) | NVIDIA | 30.0 | 12.0 / 13.5 / 30.0 |
-| 80 | [swe-1-6](https://keygen.micr.dev/tracker/swe-1-6) | Cognition | 28.3 | 1.8 / 28.3 / 15.3 |
-| 81 | [muse-spark-1.2](https://keygen.micr.dev/tracker/muse-spark-1.2) | Meta | 25.3 | 21.6 / 25.3 / 19.5 |
+| 35 | [gemini-4-argon](https://keygen.micr.dev/tracker/gemini-4-argon) | Google | 68.3 | 68.3 / 61.3 / 61.9 |
+| 36 | [claude-haiku-4-5-20251001](https://keygen.micr.dev/tracker/claude-haiku-4-5-20251001) | Anthropic | 67.8 | 67.8 / 3.4 / 11.4 |
+| 37 | [deepseek-v4-flash](https://keygen.micr.dev/tracker/deepseek-v4-flash) | DeepSeek | 67.7 | 67.7 / 51.1 |
+| 38 | [grok-composer-2.5-fast](https://keygen.micr.dev/tracker/grok-composer-2.5-fast) | xAI | 67.6 | 50.9 / 26.6 / 67.6 |
+| 39 | [kimi-k2.7-code](https://keygen.micr.dev/tracker/kimi-k2.7-code) | Moonshot AI | 67.2 | 33.4 / 64.8 / 67.2 |
+| 40 | [swe-2](https://keygen.micr.dev/tracker/swe-2) | Cognition | 67.1 | 66.2 / 57.8 / 67.1 |
+| 41 | [hy3](https://keygen.micr.dev/tracker/hy3) | Tencent | 66.9 | 28.6 / 32.5 / 66.9 |
+| 42 | [gemini-3-flash-preview](https://keygen.micr.dev/tracker/gemini-3-flash-preview) | Google | 66.7 | 61.7 / 29.9 / 66.7 |
+| 43 | [gpt-5-4](https://keygen.micr.dev/tracker/gpt-5-4) | OpenAI | 66.2 | 36.8 / 66.2 / 47.9 |
+| 44 | [gemini-3.8-flash](https://keygen.micr.dev/tracker/gemini-3.8-flash) | Google | 66.1 | 37.9 / 52.2 / 66.1 |
+| 45 | [swe-1-7-lightning](https://keygen.micr.dev/tracker/swe-1-7-lightning) | Cognition | 65.9 | 65.9 / 22.1 / 59.0 |
+| 46 | [gemini-3.6-flash](https://keygen.micr.dev/tracker/gemini-3.6-flash) | Google | 65.3 | 31.3 / 65.3 / 49.6 |
+| 47 | [gpt-5.6-luna](https://keygen.micr.dev/tracker/gpt-5.6-luna) | OpenAI | 64.8 | 64.8 / 27.7 / 24.4 |
+| 48 | [gpt-5-3-codex](https://keygen.micr.dev/tracker/gpt-5-3-codex) | OpenAI | 64.0 | 64.0 / 28.5 / 52.5 |
+| 49 | [minimax-m3](https://keygen.micr.dev/tracker/minimax-m3) | MiniMax | 62.4 | 62.4 / 28.7 / 16.2 |
+| 50 | [muse-glimmer-30b](https://keygen.micr.dev/tracker/muse-glimmer-30b) | Meta | 61.9 | 61.9 / 52.1 / 50.7 |
+| 51 | [grok-4.20-0309-reasoning](https://keygen.micr.dev/tracker/grok-4.20-0309-reasoning) | xAI | 61.7 | 57.3 / 38.8 / 61.7 |
+| 52 | [claude-sonnet-4-6](https://keygen.micr.dev/tracker/claude-sonnet-4-6) | Anthropic | 61.5 | 61.5 / 37.1 / 32.4 |
+| 53 | [glm-5-3-flash](https://keygen.micr.dev/tracker/glm-5-3-flash) | Zhipu | 61.3 | 34.4 / 61.3 |
+| 54 | [qwen3.5-397b-a17b](https://keygen.micr.dev/tracker/qwen3.5-397b-a17b) | Alibaba | 58.8 | 58.8 / 15.5 / 31.5 |
+| 55 | [kimi-k2-6](https://keygen.micr.dev/tracker/kimi-k2-6) | Moonshot AI | 57.5 | 34.2 / 57.5 / 32.4 |
+| 56 | [hermes-4-405b](https://keygen.micr.dev/tracker/hermes-4-405b) | Nous Research | 57.0 | 57.0 / 40.4 |
+| 57 | [mimo-v2.5](https://keygen.micr.dev/tracker/mimo-v2.5) | Xiaomi | 55.4 | 25.4 / 55.4 / 29.8 |
+| 58 | [nemotron-3-ultra](https://keygen.micr.dev/tracker/nemotron-3-ultra) | NVIDIA | 55.3 | 52.6 / 55.3 / 24.7 |
+| 59 | [command-a-plus-05-2026](https://keygen.micr.dev/tracker/command-a-plus-05-2026) | Cohere | 55.1 | 33.0 / 55.1 |
+| 60 | [north-mini-code](https://keygen.micr.dev/tracker/north-mini-code) | Cohere | 54.2 | 54.2 / 9.1 |
+| 61 | [command-a-reasoning-08-2025](https://keygen.micr.dev/tracker/command-a-reasoning-08-2025) | Cohere | 53.8 | 53.8 |
+| 62 | [mercury-2.5](https://keygen.micr.dev/tracker/mercury-2.5) | Inception | 52.4 | 52.4 / 40.3 |
+| 63 | [longcat-2.5-preview](https://keygen.micr.dev/tracker/longcat-2.5-preview) | Meituan | 47.3 | 47.3 / 32.4 |
+| 64 | [claude-opus-4-5-20251101](https://keygen.micr.dev/tracker/claude-opus-4-5-20251101) | Anthropic | 43.6 | 35.7 / 19.3 / 43.6 |
+| 65 | [minimax-m2.7](https://keygen.micr.dev/tracker/minimax-m2.7) | MiniMax | 43.6 | 35.0 / 43.6 / 43.4 |
+| 66 | [grok-4.20-0309-non-reasoning](https://keygen.micr.dev/tracker/grok-4.20-0309-non-reasoning) | xAI | 41.6 | 9.7 / 41.6 |
+| 67 | [qwen3.7-plus](https://keygen.micr.dev/tracker/qwen3.7-plus) | Alibaba | 41.1 | 6.1 / 22.7 / 41.1 |
+| 68 | [gpt-5-4-mini](https://keygen.micr.dev/tracker/gpt-5-4-mini) | OpenAI | 40.9 | 28.4 / 40.9 / 23.2 |
+| 69 | [grok-4.3](https://keygen.micr.dev/tracker/grok-4.3) | xAI | 39.6 | 39.6 / 33.9 / 17.5 |
+| 70 | [inkling](https://keygen.micr.dev/tracker/inkling) | Thinking Machines Lab | 38.1 | 29.9 / 38.1 / 26.8 |
+| 71 | [grok-build-0.1](https://keygen.micr.dev/tracker/grok-build-0.1) | xAI | 36.6 | 31.1 / 36.6 / 28.8 |
+| 72 | [gemini-3.1-pro-preview](https://keygen.micr.dev/tracker/gemini-3.1-pro-preview) | Google | 36.2 | 30.8 / 21.6 / 36.2 |
+| 73 | [kimi-k2-7](https://keygen.micr.dev/tracker/kimi-k2-7) | Moonshot AI | 34.4 | 34.4 / 25.5 / 24.0 |
+| 74 | [qwen3.8-flash](https://keygen.micr.dev/tracker/qwen3.8-flash) | Alibaba | 34.4 | 34.4 / 20.6 / 32.1 |
+| 75 | [gpt-oss-120b](https://keygen.micr.dev/tracker/gpt-oss-120b) | OpenAI | 33.9 | 29.1 / 33.9 |
+| 76 | [gpt-oss-20b](https://keygen.micr.dev/tracker/gpt-oss-20b) | OpenAI | 33.8 | 33.8 / 17.3 |
+| 77 | [qwen3.8-27b](https://keygen.micr.dev/tracker/qwen3.8-27b) | Alibaba | 33.2 | 33.2 |
+| 78 | [nemotron-3.5-lightning](https://keygen.micr.dev/tracker/nemotron-3.5-lightning) | NVIDIA | 31.2 | 31.2 |
+| 79 | [grok-build](https://keygen.micr.dev/tracker/grok-build) | xAI | 31.0 | 31.0 / 23.2 / 20.9 |
+| 80 | [nemotron-3-super-120b-a12b](https://keygen.micr.dev/tracker/nemotron-3-super-120b-a12b) | NVIDIA | 30.0 | 12.0 / 13.5 / 30.0 |
+| 81 | [swe-1-6](https://keygen.micr.dev/tracker/swe-1-6) | Cognition | 28.3 | 1.8 / 28.3 / 15.3 |
+| 82 | [muse-spark-1.2](https://keygen.micr.dev/tracker/muse-spark-1.2) | Meta | 25.3 | 21.6 / 25.3 / 19.5 |
