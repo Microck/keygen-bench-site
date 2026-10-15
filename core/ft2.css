@@ -1,0 +1,117 @@
+/* FastTracker II look, rebuilt from ft2-clone geometry/palette ("Why colors" preset, the classic FT2 look).
+   Text uses the original FT2 font1/font3 bitmaps, converted to fonts/ft2-font1.woff2 etc. by build_fonts.py. */
+@font-face { font-family: "FT2"; src: url("./fonts/ft2-font1.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "FT2 Big"; src: url("./fonts/ft2-font2.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "FT2 Tiny"; src: url("./fonts/ft2-font3.woff2") format("woff2"); font-display: block; }
+
+:root {
+  /* ft2-clone palTable[10] "Why colors": the classic FT2 look, and ft2-clone's default until v1.89.
+     LOOPPIN = PATTEXT - 96 per channel (ft2_palette.c). */
+  --bckgrnd: #000000;  /* inside wells */
+  --pattext: #92BEFF;  /* pattern text, scopes, selection bar */
+  --blckmrk: #242441;
+  --blcktxt: #FFFFFF;
+  --desktop: #4D619A;  /* panel fill, current row */
+  --forgrnd: #FFFFFF;  /* labels and values */
+  --buttons: #9E9E9E;
+  --btntext: #000000;
+  --dsktop2: #20283D;  /* dark bevel, text shadow */
+  --dsktop1: #82A6FF;  /* light bevel */
+  --button2: #3D3D3D;
+  --button1: #FFFFFF;
+  --looppin: #325E9F;
+  /* Not an FT2 palette entry: secondary text on DESKTOP panels (FT2 has none). */
+  --dim: #C3CEEA;
+  --px: 1px;
+}
+
+.ft2, .ft2 * { box-sizing: border-box; }
+.ft2 {
+  font-family: "FT2", ui-monospace, monospace;
+  font-size: 10px;   /* 1 font pixel = 1 CSS px */
+  line-height: 11px;
+  color: var(--forgrnd);
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+  image-rendering: pixelated;
+  user-select: none;
+}
+.ft2 canvas { image-rendering: pixelated; display: block; }
+.ft2 .tiny { font-family: "FT2 Tiny", monospace; font-size: 7px; line-height: 8px; text-transform: uppercase; }
+.ft2 .bigfont { font-family: "FT2 Big", monospace; font-size: 20px; line-height: 20px; }
+
+/* drawFramework TYPE1: raised panel. Light top/left DSKTOP1, dark bottom/right DSKTOP2. */
+.raised {
+  background: var(--desktop);
+  box-shadow: inset 1px 1px 0 var(--dsktop1), inset -1px -1px 0 var(--dsktop2);
+}
+/* drawFramework TYPE2: sunken well, black interior. */
+.sunken {
+  background: var(--bckgrnd);
+  box-shadow: inset 1px 1px 0 var(--dsktop2), inset -1px -1px 0 var(--dsktop1);
+}
+.shadow-text { color: var(--forgrnd); text-shadow: 1px 1px 0 var(--dsktop2); }
+
+/* Pushbutton: 1px black border, white top/left, BUTTON2 bottom/right; pressed = dark top/left only, caption +1,+1. */
+.btn {
+  appearance: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin: 0; padding: 0 2px;
+  font: inherit; line-height: 10px;
+  color: var(--btntext);
+  background: var(--buttons);
+  border: 1px solid #000;
+  box-shadow: inset 1px 1px 0 var(--button1), inset -1px -1px 0 var(--button2);
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.btn:active, .btn.pressed, .btn[aria-pressed="true"], .btn[aria-current="page"] {
+  box-shadow: inset 1px 1px 0 var(--button2);
+  padding: 1px 1px 0 3px;
+}
+.btn:focus-visible { outline: 1px dotted var(--forgrnd); outline-offset: -3px; }
+.btn[disabled] { color: var(--button2); cursor: default; }
+
+/* Value box: FT2 prints values white on DESKTOP. */
+.val { color: var(--forgrnd); background: var(--desktop); font-variant-numeric: tabular-nums; }
+
+/* Scrollbar, as ft2-clone draws its dynamic-size bars (ft2_scrollbars.c): black track, flat PATTEXT
+   thumb, no rounding, no arrow buttons. Chromium honours ::-webkit-scrollbar only when the standard
+   scrollbar-color/-width are unset, so those are limited to browsers without the webkit pseudo-elements. */
+@supports not selector(::-webkit-scrollbar) {
+  .ft2-scroll { scrollbar-color: var(--pattext) #000; scrollbar-width: thin; }
+}
+.ft2-scroll::-webkit-scrollbar { width: 7px; height: 7px; background: #000; }
+.ft2-scroll::-webkit-scrollbar-track { background: #000; }
+.ft2-scroll::-webkit-scrollbar-thumb { background: var(--pattext); border: 1px solid #000; border-radius: 0; }
+.ft2-scroll::-webkit-scrollbar-thumb:active { background: #fff; }
+.ft2-scroll::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+.ft2-scroll::-webkit-scrollbar-corner { background: #000; }
+
+/* List rows (Disk Op / instrument list): selected row is a filled bar. */
+.list-row { height: 11px; line-height: 11px; padding-left: 2px; white-space: nowrap; overflow: hidden; cursor: pointer; }
+.list-row.sel { background: var(--pattext); color: #000; }
+.list-row.hl { background: var(--buttons); color: #000; }
+
+/* Dropdown (not in FT2; built from its textbox + arrow button + Disk Op list). */
+.dd { position: relative; display: flex; height: 14px; }
+.dd-face { flex: 1; min-width: 0; height: 14px; padding: 2px 3px 0; overflow: hidden; white-space: nowrap; text-overflow: clip; cursor: pointer; }
+/* No browser focus ring (it is rounded and grows the box); keyboard focus gets FT2's inset dotted line. */
+.dd-face:focus { outline: none; }
+.dd-face[data-kb]:focus { outline: 1px dotted var(--forgrnd); outline-offset: -3px; }
+.dd-arrow { width: 18px; height: 14px; padding: 0; font-size: 8px; }
+.dd-pop {
+  position: absolute; z-index: 50; left: 0; right: 0; top: 14px;
+  max-height: 199px; overflow-y: auto; padding: 2px;
+  background: #000; box-shadow: inset 1px 1px 0 var(--dsktop2), inset -1px -1px 0 var(--dsktop1), 0 0 0 1px #000;
+}
+.dd-pop .list-row { display: flex; gap: 4px; align-items: center; }
+.dd-pop .list-row:hover { background: var(--looppin); }
+.dd-pop .list-row.sel:hover { background: var(--pattext); }
+
+/* Maker logo: 16x16 pixel art, integer scaled. */
+.badge { display: inline-block; flex: none; image-rendering: pixelated; vertical-align: middle; }
+
+.hex { font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.muted { color: var(--pattext); }

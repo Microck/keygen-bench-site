@@ -1,0 +1,847 @@
+{
+ "/": {
+  "title": "Keygen Bench",
+  "description": "82 AI models write keygen tunes in FastTracker II, scored from the audio. Top: gpt-6-sol 73.7, gpt-6.1-sol 71.9, mimo-v2.6-pro 71.7.",
+  "image": "/dist/og/home.png"
+ },
+ "/tracker": {
+  "title": "Keygen Bench: Tracker",
+  "description": "82 AI models write keygen tunes in FastTracker II, scored from the audio. Top: gpt-6-sol 73.7, gpt-6.1-sol 71.9, mimo-v2.6-pro 71.7.",
+  "image": "/dist/og/home.png"
+ },
+ "/rankings": {
+  "title": "Keygen Bench: Rankings",
+  "description": "82 AI models write keygen tunes in FastTracker II, scored from the audio. Top: gpt-6-sol 73.7, gpt-6.1-sol 71.9, mimo-v2.6-pro 71.7.",
+  "image": "/dist/og/home.png"
+ },
+ "/scoring": {
+  "title": "Keygen Bench: How scoring works",
+  "description": "82 AI models write keygen tunes in FastTracker II, scored from the audio. Top: gpt-6-sol 73.7, gpt-6.1-sol 71.9, mimo-v2.6-pro 71.7.",
+  "image": "/dist/og/home.png"
+ },
+ "/support": {
+  "title": "Keygen Bench: Support",
+  "description": "82 AI models write keygen tunes in FastTracker II, scored from the audio. Top: gpt-6-sol 73.7, gpt-6.1-sol 71.9, mimo-v2.6-pro 71.7.",
+  "image": "/dist/og/home.png"
+ },
+ "/tracker/gpt-6-sol": {
+  "title": "gpt-6-sol: 73.7 | Keygen Bench",
+  "description": "Rank 1 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6-sol.png"
+ },
+ "/rankings/gpt-6-sol": {
+  "title": "gpt-6-sol: 73.7 | Keygen Bench",
+  "description": "Rank 1 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6-sol.png"
+ },
+ "/tracker/gpt-6.1-sol": {
+  "title": "gpt-6.1-sol: 71.9 | Keygen Bench",
+  "description": "Rank 2 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6.1-sol.png"
+ },
+ "/rankings/gpt-6.1-sol": {
+  "title": "gpt-6.1-sol: 71.9 | Keygen Bench",
+  "description": "Rank 2 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6.1-sol.png"
+ },
+ "/tracker/mimo-v2.6-pro": {
+  "title": "mimo-v2.6-pro: 71.7 | Keygen Bench",
+  "description": "Rank 3 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mimo-v2.6-pro.png"
+ },
+ "/rankings/mimo-v2.6-pro": {
+  "title": "mimo-v2.6-pro: 71.7 | Keygen Bench",
+  "description": "Rank 3 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mimo-v2.6-pro.png"
+ },
+ "/tracker/deepseek-v4-1-flash": {
+  "title": "deepseek-v4-1-flash: 70.8 | Keygen Bench",
+  "description": "Rank 4 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/deepseek-v4-1-flash.png"
+ },
+ "/rankings/deepseek-v4-1-flash": {
+  "title": "deepseek-v4-1-flash: 70.8 | Keygen Bench",
+  "description": "Rank 4 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/deepseek-v4-1-flash.png"
+ },
+ "/tracker/gpt-6-astra": {
+  "title": "gpt-6-astra: 70.1 | Keygen Bench",
+  "description": "Rank 5 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6-astra.png"
+ },
+ "/rankings/gpt-6-astra": {
+  "title": "gpt-6-astra: 70.1 | Keygen Bench",
+  "description": "Rank 5 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6-astra.png"
+ },
+ "/tracker/claude-opus-5": {
+  "title": "claude-opus-5: 69.8 | Keygen Bench",
+  "description": "Rank 6 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-5.png"
+ },
+ "/rankings/claude-opus-5": {
+  "title": "claude-opus-5: 69.8 | Keygen Bench",
+  "description": "Rank 6 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-5.png"
+ },
+ "/tracker/gemini-4-argon": {
+  "title": "gemini-4-argon: 68.5 | Keygen Bench",
+  "description": "Rank 7 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-4-argon.png"
+ },
+ "/rankings/gemini-4-argon": {
+  "title": "gemini-4-argon: 68.5 | Keygen Bench",
+  "description": "Rank 7 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-4-argon.png"
+ },
+ "/tracker/glm-5.2": {
+  "title": "glm-5.2: 68.3 | Keygen Bench",
+  "description": "Rank 8 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/glm-5.2.png"
+ },
+ "/rankings/glm-5.2": {
+  "title": "glm-5.2: 68.3 | Keygen Bench",
+  "description": "Rank 8 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/glm-5.2.png"
+ },
+ "/tracker/gpt-5.6-sol": {
+  "title": "gpt-5.6-sol: 67.2 | Keygen Bench",
+  "description": "Rank 9 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.6-sol.png"
+ },
+ "/rankings/gpt-5.6-sol": {
+  "title": "gpt-5.6-sol: 67.2 | Keygen Bench",
+  "description": "Rank 9 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.6-sol.png"
+ },
+ "/tracker/claude-fable-5-1": {
+  "title": "claude-fable-5-1: 67.0 | Keygen Bench",
+  "description": "Rank 10 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-fable-5-1.png"
+ },
+ "/rankings/claude-fable-5-1": {
+  "title": "claude-fable-5-1: 67.0 | Keygen Bench",
+  "description": "Rank 10 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-fable-5-1.png"
+ },
+ "/tracker/claude-sonnet-5-5": {
+  "title": "claude-sonnet-5-5: 66.5 | Keygen Bench",
+  "description": "Rank 11 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-sonnet-5-5.png"
+ },
+ "/rankings/claude-sonnet-5-5": {
+  "title": "claude-sonnet-5-5: 66.5 | Keygen Bench",
+  "description": "Rank 11 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-sonnet-5-5.png"
+ },
+ "/tracker/claude-sonnet-5": {
+  "title": "claude-sonnet-5: 66.2 | Keygen Bench",
+  "description": "Rank 12 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-sonnet-5.png"
+ },
+ "/rankings/claude-sonnet-5": {
+  "title": "claude-sonnet-5: 66.2 | Keygen Bench",
+  "description": "Rank 12 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-sonnet-5.png"
+ },
+ "/tracker/hy4-preview": {
+  "title": "hy4-preview: 65.7 | Keygen Bench",
+  "description": "Rank 13 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/hy4-preview.png"
+ },
+ "/rankings/hy4-preview": {
+  "title": "hy4-preview: 65.7 | Keygen Bench",
+  "description": "Rank 13 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/hy4-preview.png"
+ },
+ "/tracker/claude-haiku-5-5": {
+  "title": "claude-haiku-5-5: 65.5 | Keygen Bench",
+  "description": "Rank 14 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-haiku-5-5.png"
+ },
+ "/rankings/claude-haiku-5-5": {
+  "title": "claude-haiku-5-5: 65.5 | Keygen Bench",
+  "description": "Rank 14 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-haiku-5-5.png"
+ },
+ "/tracker/glm-5-3": {
+  "title": "glm-5-3: 64.6 | Keygen Bench",
+  "description": "Rank 15 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/glm-5-3.png"
+ },
+ "/rankings/glm-5-3": {
+  "title": "glm-5-3: 64.6 | Keygen Bench",
+  "description": "Rank 15 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/glm-5-3.png"
+ },
+ "/tracker/gpt-5-4": {
+  "title": "gpt-5-4: 64.4 | Keygen Bench",
+  "description": "Rank 16 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5-4.png"
+ },
+ "/rankings/gpt-5-4": {
+  "title": "gpt-5-4: 64.4 | Keygen Bench",
+  "description": "Rank 16 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5-4.png"
+ },
+ "/tracker/hy3": {
+  "title": "hy3: 64.3 | Keygen Bench",
+  "description": "Rank 17 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/hy3.png"
+ },
+ "/rankings/hy3": {
+  "title": "hy3: 64.3 | Keygen Bench",
+  "description": "Rank 17 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/hy3.png"
+ },
+ "/tracker/grok-4-6": {
+  "title": "grok-4-6: 64.0 | Keygen Bench",
+  "description": "Rank 18 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4-6.png"
+ },
+ "/rankings/grok-4-6": {
+  "title": "grok-4-6: 64.0 | Keygen Bench",
+  "description": "Rank 18 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4-6.png"
+ },
+ "/tracker/deepseek-v4-pro": {
+  "title": "deepseek-v4-pro: 63.7 | Keygen Bench",
+  "description": "Rank 19 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/deepseek-v4-pro.png"
+ },
+ "/rankings/deepseek-v4-pro": {
+  "title": "deepseek-v4-pro: 63.7 | Keygen Bench",
+  "description": "Rank 19 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/deepseek-v4-pro.png"
+ },
+ "/tracker/gpt-5.6-terra": {
+  "title": "gpt-5.6-terra: 63.4 | Keygen Bench",
+  "description": "Rank 20 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.6-terra.png"
+ },
+ "/rankings/gpt-5.6-terra": {
+  "title": "gpt-5.6-terra: 63.4 | Keygen Bench",
+  "description": "Rank 20 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.6-terra.png"
+ },
+ "/tracker/claude-opus-5-5": {
+  "title": "claude-opus-5-5: 63.2 | Keygen Bench",
+  "description": "Rank 21 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-5-5.png"
+ },
+ "/rankings/claude-opus-5-5": {
+  "title": "claude-opus-5-5: 63.2 | Keygen Bench",
+  "description": "Rank 21 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-5-5.png"
+ },
+ "/tracker/mimo-v2.6-flash": {
+  "title": "mimo-v2.6-flash: 63.2 | Keygen Bench",
+  "description": "Rank 22 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mimo-v2.6-flash.png"
+ },
+ "/rankings/mimo-v2.6-flash": {
+  "title": "mimo-v2.6-flash: 63.2 | Keygen Bench",
+  "description": "Rank 22 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mimo-v2.6-flash.png"
+ },
+ "/tracker/claude-opus-4-7": {
+  "title": "claude-opus-4-7: 62.5 | Keygen Bench",
+  "description": "Rank 23 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-7.png"
+ },
+ "/rankings/claude-opus-4-7": {
+  "title": "claude-opus-4-7: 62.5 | Keygen Bench",
+  "description": "Rank 23 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-7.png"
+ },
+ "/tracker/glm-5-3-flash": {
+  "title": "glm-5-3-flash: 62.2 | Keygen Bench",
+  "description": "Rank 24 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/glm-5-3-flash.png"
+ },
+ "/rankings/glm-5-3-flash": {
+  "title": "glm-5-3-flash: 62.2 | Keygen Bench",
+  "description": "Rank 24 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/glm-5-3-flash.png"
+ },
+ "/tracker/gpt-5.5": {
+  "title": "gpt-5.5: 62.1 | Keygen Bench",
+  "description": "Rank 25 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.5.png"
+ },
+ "/rankings/gpt-5.5": {
+  "title": "gpt-5.5: 62.1 | Keygen Bench",
+  "description": "Rank 25 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.5.png"
+ },
+ "/tracker/claude-opus-4-8": {
+  "title": "claude-opus-4-8: 61.9 | Keygen Bench",
+  "description": "Rank 26 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-8.png"
+ },
+ "/rankings/claude-opus-4-8": {
+  "title": "claude-opus-4-8: 61.9 | Keygen Bench",
+  "description": "Rank 26 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-8.png"
+ },
+ "/tracker/gpt-6-luna": {
+  "title": "gpt-6-luna: 61.9 | Keygen Bench",
+  "description": "Rank 27 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6-luna.png"
+ },
+ "/rankings/gpt-6-luna": {
+  "title": "gpt-6-luna: 61.9 | Keygen Bench",
+  "description": "Rank 27 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-6-luna.png"
+ },
+ "/tracker/kimi-k3": {
+  "title": "kimi-k3: 61.7 | Keygen Bench",
+  "description": "Rank 28 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k3.png"
+ },
+ "/rankings/kimi-k3": {
+  "title": "kimi-k3: 61.7 | Keygen Bench",
+  "description": "Rank 28 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k3.png"
+ },
+ "/tracker/step-5-preview": {
+  "title": "step-5-preview: 61.6 | Keygen Bench",
+  "description": "Rank 29 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/step-5-preview.png"
+ },
+ "/rankings/step-5-preview": {
+  "title": "step-5-preview: 61.6 | Keygen Bench",
+  "description": "Rank 29 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/step-5-preview.png"
+ },
+ "/tracker/muse-spark-1.3": {
+  "title": "muse-spark-1.3: 61.4 | Keygen Bench",
+  "description": "Rank 30 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/muse-spark-1.3.png"
+ },
+ "/rankings/muse-spark-1.3": {
+  "title": "muse-spark-1.3: 61.4 | Keygen Bench",
+  "description": "Rank 30 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/muse-spark-1.3.png"
+ },
+ "/tracker/longcat-2.5-preview": {
+  "title": "longcat-2.5-preview: 61.3 | Keygen Bench",
+  "description": "Rank 31 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/longcat-2.5-preview.png"
+ },
+ "/rankings/longcat-2.5-preview": {
+  "title": "longcat-2.5-preview: 61.3 | Keygen Bench",
+  "description": "Rank 31 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/longcat-2.5-preview.png"
+ },
+ "/tracker/grok-4-5": {
+  "title": "grok-4-5: 61.1 | Keygen Bench",
+  "description": "Rank 32 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4-5.png"
+ },
+ "/rankings/grok-4-5": {
+  "title": "grok-4-5: 61.1 | Keygen Bench",
+  "description": "Rank 32 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4-5.png"
+ },
+ "/tracker/qwen3.7-plus": {
+  "title": "qwen3.7-plus: 60.8 | Keygen Bench",
+  "description": "Rank 33 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.7-plus.png"
+ },
+ "/rankings/qwen3.7-plus": {
+  "title": "qwen3.7-plus: 60.8 | Keygen Bench",
+  "description": "Rank 33 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.7-plus.png"
+ },
+ "/tracker/deepseek-v4-flash": {
+  "title": "deepseek-v4-flash: 60.7 | Keygen Bench",
+  "description": "Rank 34 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/deepseek-v4-flash.png"
+ },
+ "/rankings/deepseek-v4-flash": {
+  "title": "deepseek-v4-flash: 60.7 | Keygen Bench",
+  "description": "Rank 34 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/deepseek-v4-flash.png"
+ },
+ "/tracker/gemini-3.8-flash": {
+  "title": "gemini-3.8-flash: 60.7 | Keygen Bench",
+  "description": "Rank 35 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.8-flash.png"
+ },
+ "/rankings/gemini-3.8-flash": {
+  "title": "gemini-3.8-flash: 60.7 | Keygen Bench",
+  "description": "Rank 35 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.8-flash.png"
+ },
+ "/tracker/claude-fable-5": {
+  "title": "claude-fable-5: 60.4 | Keygen Bench",
+  "description": "Rank 36 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-fable-5.png"
+ },
+ "/rankings/claude-fable-5": {
+  "title": "claude-fable-5: 60.4 | Keygen Bench",
+  "description": "Rank 36 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-fable-5.png"
+ },
+ "/tracker/gemini-3-flash-preview": {
+  "title": "gemini-3-flash-preview: 60.2 | Keygen Bench",
+  "description": "Rank 37 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3-flash-preview.png"
+ },
+ "/rankings/gemini-3-flash-preview": {
+  "title": "gemini-3-flash-preview: 60.2 | Keygen Bench",
+  "description": "Rank 37 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3-flash-preview.png"
+ },
+ "/tracker/grok-4-7": {
+  "title": "grok-4-7: 59.8 | Keygen Bench",
+  "description": "Rank 38 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4-7.png"
+ },
+ "/rankings/grok-4-7": {
+  "title": "grok-4-7: 59.8 | Keygen Bench",
+  "description": "Rank 38 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4-7.png"
+ },
+ "/tracker/qwen3.5-397b-a17b": {
+  "title": "qwen3.5-397b-a17b: 59.7 | Keygen Bench",
+  "description": "Rank 39 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.5-397b-a17b.png"
+ },
+ "/rankings/qwen3.5-397b-a17b": {
+  "title": "qwen3.5-397b-a17b: 59.7 | Keygen Bench",
+  "description": "Rank 39 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.5-397b-a17b.png"
+ },
+ "/tracker/gemini-3.7-flash": {
+  "title": "gemini-3.7-flash: 59.3 | Keygen Bench",
+  "description": "Rank 40 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.7-flash.png"
+ },
+ "/rankings/gemini-3.7-flash": {
+  "title": "gemini-3.7-flash: 59.3 | Keygen Bench",
+  "description": "Rank 40 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.7-flash.png"
+ },
+ "/tracker/claude-sonnet-4-6": {
+  "title": "claude-sonnet-4-6: 58.8 | Keygen Bench",
+  "description": "Rank 41 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-sonnet-4-6.png"
+ },
+ "/rankings/claude-sonnet-4-6": {
+  "title": "claude-sonnet-4-6: 58.8 | Keygen Bench",
+  "description": "Rank 41 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-sonnet-4-6.png"
+ },
+ "/tracker/grok-4.20-0309-reasoning": {
+  "title": "grok-4.20-0309-reasoning: 57.9 | Keygen Bench",
+  "description": "Rank 42 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4.20-0309-reasoning.png"
+ },
+ "/rankings/grok-4.20-0309-reasoning": {
+  "title": "grok-4.20-0309-reasoning: 57.9 | Keygen Bench",
+  "description": "Rank 42 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4.20-0309-reasoning.png"
+ },
+ "/tracker/kimi-k2-6": {
+  "title": "kimi-k2-6: 57.7 | Keygen Bench",
+  "description": "Rank 43 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k2-6.png"
+ },
+ "/rankings/kimi-k2-6": {
+  "title": "kimi-k2-6: 57.7 | Keygen Bench",
+  "description": "Rank 43 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k2-6.png"
+ },
+ "/tracker/swe-2": {
+  "title": "swe-2: 56.6 | Keygen Bench",
+  "description": "Rank 44 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/swe-2.png"
+ },
+ "/rankings/swe-2": {
+  "title": "swe-2: 56.6 | Keygen Bench",
+  "description": "Rank 44 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/swe-2.png"
+ },
+ "/tracker/claude-opus-4-6": {
+  "title": "claude-opus-4-6: 56.3 | Keygen Bench",
+  "description": "Rank 45 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-6.png"
+ },
+ "/rankings/claude-opus-4-6": {
+  "title": "claude-opus-4-6: 56.3 | Keygen Bench",
+  "description": "Rank 45 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-6.png"
+ },
+ "/tracker/grok-composer-2.5-fast": {
+  "title": "grok-composer-2.5-fast: 55.5 | Keygen Bench",
+  "description": "Rank 46 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-composer-2.5-fast.png"
+ },
+ "/rankings/grok-composer-2.5-fast": {
+  "title": "grok-composer-2.5-fast: 55.5 | Keygen Bench",
+  "description": "Rank 46 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-composer-2.5-fast.png"
+ },
+ "/tracker/minimax-m2.7": {
+  "title": "minimax-m2.7: 54.3 | Keygen Bench",
+  "description": "Rank 47 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/minimax-m2.7.png"
+ },
+ "/rankings/minimax-m2.7": {
+  "title": "minimax-m2.7: 54.3 | Keygen Bench",
+  "description": "Rank 47 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/minimax-m2.7.png"
+ },
+ "/tracker/gpt-5.6-luna": {
+  "title": "gpt-5.6-luna: 53.7 | Keygen Bench",
+  "description": "Rank 48 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.6-luna.png"
+ },
+ "/rankings/gpt-5.6-luna": {
+  "title": "gpt-5.6-luna: 53.7 | Keygen Bench",
+  "description": "Rank 48 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5.6-luna.png"
+ },
+ "/tracker/minimax-m3": {
+  "title": "minimax-m3: 53.3 | Keygen Bench",
+  "description": "Rank 49 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/minimax-m3.png"
+ },
+ "/rankings/minimax-m3": {
+  "title": "minimax-m3: 53.3 | Keygen Bench",
+  "description": "Rank 49 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/minimax-m3.png"
+ },
+ "/tracker/gemini-3.1-pro-preview": {
+  "title": "gemini-3.1-pro-preview: 52.2 | Keygen Bench",
+  "description": "Rank 50 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.1-pro-preview.png"
+ },
+ "/rankings/gemini-3.1-pro-preview": {
+  "title": "gemini-3.1-pro-preview: 52.2 | Keygen Bench",
+  "description": "Rank 50 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.1-pro-preview.png"
+ },
+ "/tracker/gpt-5-4-mini": {
+  "title": "gpt-5-4-mini: 52.1 | Keygen Bench",
+  "description": "Rank 51 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5-4-mini.png"
+ },
+ "/rankings/gpt-5-4-mini": {
+  "title": "gpt-5-4-mini: 52.1 | Keygen Bench",
+  "description": "Rank 51 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5-4-mini.png"
+ },
+ "/tracker/kimi-k2.7-code": {
+  "title": "kimi-k2.7-code: 51.7 | Keygen Bench",
+  "description": "Rank 52 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k2.7-code.png"
+ },
+ "/rankings/kimi-k2.7-code": {
+  "title": "kimi-k2.7-code: 51.7 | Keygen Bench",
+  "description": "Rank 52 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k2.7-code.png"
+ },
+ "/tracker/command-a-plus-05-2026": {
+  "title": "command-a-plus-05-2026: 51.5 | Keygen Bench",
+  "description": "Rank 53 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/command-a-plus-05-2026.png"
+ },
+ "/rankings/command-a-plus-05-2026": {
+  "title": "command-a-plus-05-2026: 51.5 | Keygen Bench",
+  "description": "Rank 53 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/command-a-plus-05-2026.png"
+ },
+ "/tracker/gemini-3.5-flash": {
+  "title": "gemini-3.5-flash: 51.5 | Keygen Bench",
+  "description": "Rank 54 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.5-flash.png"
+ },
+ "/rankings/gemini-3.5-flash": {
+  "title": "gemini-3.5-flash: 51.5 | Keygen Bench",
+  "description": "Rank 54 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.5-flash.png"
+ },
+ "/tracker/gpt-5-3-codex": {
+  "title": "gpt-5-3-codex: 51.5 | Keygen Bench",
+  "description": "Rank 55 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5-3-codex.png"
+ },
+ "/rankings/gpt-5-3-codex": {
+  "title": "gpt-5-3-codex: 51.5 | Keygen Bench",
+  "description": "Rank 55 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-5-3-codex.png"
+ },
+ "/tracker/gemini-3.6-flash": {
+  "title": "gemini-3.6-flash: 49.5 | Keygen Bench",
+  "description": "Rank 56 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.6-flash.png"
+ },
+ "/rankings/gemini-3.6-flash": {
+  "title": "gemini-3.6-flash: 49.5 | Keygen Bench",
+  "description": "Rank 56 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gemini-3.6-flash.png"
+ },
+ "/tracker/hermes-4-405b": {
+  "title": "hermes-4-405b: 49.0 | Keygen Bench",
+  "description": "Rank 57 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/hermes-4-405b.png"
+ },
+ "/rankings/hermes-4-405b": {
+  "title": "hermes-4-405b: 49.0 | Keygen Bench",
+  "description": "Rank 57 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/hermes-4-405b.png"
+ },
+ "/tracker/claude-opus-4-5-20251101": {
+  "title": "claude-opus-4-5-20251101: 48.8 | Keygen Bench",
+  "description": "Rank 58 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-5-20251101.png"
+ },
+ "/rankings/claude-opus-4-5-20251101": {
+  "title": "claude-opus-4-5-20251101: 48.8 | Keygen Bench",
+  "description": "Rank 58 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-opus-4-5-20251101.png"
+ },
+ "/tracker/swe-1-7-lightning": {
+  "title": "swe-1-7-lightning: 48.2 | Keygen Bench",
+  "description": "Rank 59 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/swe-1-7-lightning.png"
+ },
+ "/rankings/swe-1-7-lightning": {
+  "title": "swe-1-7-lightning: 48.2 | Keygen Bench",
+  "description": "Rank 59 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/swe-1-7-lightning.png"
+ },
+ "/tracker/muse-glimmer-30b": {
+  "title": "muse-glimmer-30b: 47.6 | Keygen Bench",
+  "description": "Rank 60 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/muse-glimmer-30b.png"
+ },
+ "/rankings/muse-glimmer-30b": {
+  "title": "muse-glimmer-30b: 47.6 | Keygen Bench",
+  "description": "Rank 60 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/muse-glimmer-30b.png"
+ },
+ "/tracker/mistral-large-4": {
+  "title": "mistral-large-4: 47.2 | Keygen Bench",
+  "description": "Rank 61 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mistral-large-4.png"
+ },
+ "/rankings/mistral-large-4": {
+  "title": "mistral-large-4: 47.2 | Keygen Bench",
+  "description": "Rank 61 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mistral-large-4.png"
+ },
+ "/tracker/inkling": {
+  "title": "inkling: 47.1 | Keygen Bench",
+  "description": "Rank 62 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/inkling.png"
+ },
+ "/rankings/inkling": {
+  "title": "inkling: 47.1 | Keygen Bench",
+  "description": "Rank 62 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/inkling.png"
+ },
+ "/tracker/north-mini-code": {
+  "title": "north-mini-code: 47.1 | Keygen Bench",
+  "description": "Rank 63 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/north-mini-code.png"
+ },
+ "/rankings/north-mini-code": {
+  "title": "north-mini-code: 47.1 | Keygen Bench",
+  "description": "Rank 63 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/north-mini-code.png"
+ },
+ "/tracker/step-3.7-flash": {
+  "title": "step-3.7-flash: 45.4 | Keygen Bench",
+  "description": "Rank 64 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/step-3.7-flash.png"
+ },
+ "/rankings/step-3.7-flash": {
+  "title": "step-3.7-flash: 45.4 | Keygen Bench",
+  "description": "Rank 64 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/step-3.7-flash.png"
+ },
+ "/tracker/kimi-k2-7": {
+  "title": "kimi-k2-7: 45.3 | Keygen Bench",
+  "description": "Rank 65 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k2-7.png"
+ },
+ "/rankings/kimi-k2-7": {
+  "title": "kimi-k2-7: 45.3 | Keygen Bench",
+  "description": "Rank 65 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/kimi-k2-7.png"
+ },
+ "/tracker/mimo-v2.5": {
+  "title": "mimo-v2.5: 42.4 | Keygen Bench",
+  "description": "Rank 66 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mimo-v2.5.png"
+ },
+ "/rankings/mimo-v2.5": {
+  "title": "mimo-v2.5: 42.4 | Keygen Bench",
+  "description": "Rank 66 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mimo-v2.5.png"
+ },
+ "/tracker/qwen3.8-flash": {
+  "title": "qwen3.8-flash: 42.2 | Keygen Bench",
+  "description": "Rank 67 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.8-flash.png"
+ },
+ "/rankings/qwen3.8-flash": {
+  "title": "qwen3.8-flash: 42.2 | Keygen Bench",
+  "description": "Rank 67 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.8-flash.png"
+ },
+ "/tracker/nemotron-3-ultra": {
+  "title": "nemotron-3-ultra: 40.5 | Keygen Bench",
+  "description": "Rank 68 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/nemotron-3-ultra.png"
+ },
+ "/rankings/nemotron-3-ultra": {
+  "title": "nemotron-3-ultra: 40.5 | Keygen Bench",
+  "description": "Rank 68 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/nemotron-3-ultra.png"
+ },
+ "/tracker/grok-4.3": {
+  "title": "grok-4.3: 38.4 | Keygen Bench",
+  "description": "Rank 69 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4.3.png"
+ },
+ "/rankings/grok-4.3": {
+  "title": "grok-4.3: 38.4 | Keygen Bench",
+  "description": "Rank 69 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4.3.png"
+ },
+ "/tracker/swe-1-6": {
+  "title": "swe-1-6: 37.9 | Keygen Bench",
+  "description": "Rank 70 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/swe-1-6.png"
+ },
+ "/rankings/swe-1-6": {
+  "title": "swe-1-6: 37.9 | Keygen Bench",
+  "description": "Rank 70 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/swe-1-6.png"
+ },
+ "/tracker/gpt-oss-120b": {
+  "title": "gpt-oss-120b: 36.8 | Keygen Bench",
+  "description": "Rank 71 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-oss-120b.png"
+ },
+ "/rankings/gpt-oss-120b": {
+  "title": "gpt-oss-120b: 36.8 | Keygen Bench",
+  "description": "Rank 71 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-oss-120b.png"
+ },
+ "/tracker/claude-haiku-4-5-20251001": {
+  "title": "claude-haiku-4-5-20251001: 36.6 | Keygen Bench",
+  "description": "Rank 72 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-haiku-4-5-20251001.png"
+ },
+ "/rankings/claude-haiku-4-5-20251001": {
+  "title": "claude-haiku-4-5-20251001: 36.6 | Keygen Bench",
+  "description": "Rank 72 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/claude-haiku-4-5-20251001.png"
+ },
+ "/tracker/gpt-oss-20b": {
+  "title": "gpt-oss-20b: 36.2 | Keygen Bench",
+  "description": "Rank 73 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-oss-20b.png"
+ },
+ "/rankings/gpt-oss-20b": {
+  "title": "gpt-oss-20b: 36.2 | Keygen Bench",
+  "description": "Rank 73 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/gpt-oss-20b.png"
+ },
+ "/tracker/grok-build-0.1": {
+  "title": "grok-build-0.1: 33.6 | Keygen Bench",
+  "description": "Rank 74 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-build-0.1.png"
+ },
+ "/rankings/grok-build-0.1": {
+  "title": "grok-build-0.1: 33.6 | Keygen Bench",
+  "description": "Rank 74 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-build-0.1.png"
+ },
+ "/tracker/muse-spark-1.2": {
+  "title": "muse-spark-1.2: 33.1 | Keygen Bench",
+  "description": "Rank 75 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/muse-spark-1.2.png"
+ },
+ "/rankings/muse-spark-1.2": {
+  "title": "muse-spark-1.2: 33.1 | Keygen Bench",
+  "description": "Rank 75 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/muse-spark-1.2.png"
+ },
+ "/tracker/qwen3.8-27b": {
+  "title": "qwen3.8-27b: 32.9 | Keygen Bench",
+  "description": "Rank 76 of 82. Best of 1 attempt writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.8-27b.png"
+ },
+ "/rankings/qwen3.8-27b": {
+  "title": "qwen3.8-27b: 32.9 | Keygen Bench",
+  "description": "Rank 76 of 82. Best of 1 attempt writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/qwen3.8-27b.png"
+ },
+ "/tracker/mercury-2.5": {
+  "title": "mercury-2.5: 30.7 | Keygen Bench",
+  "description": "Rank 77 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mercury-2.5.png"
+ },
+ "/rankings/mercury-2.5": {
+  "title": "mercury-2.5: 30.7 | Keygen Bench",
+  "description": "Rank 77 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/mercury-2.5.png"
+ },
+ "/tracker/grok-4.20-0309-non-reasoning": {
+  "title": "grok-4.20-0309-non-reasoning: 26.6 | Keygen Bench",
+  "description": "Rank 78 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4.20-0309-non-reasoning.png"
+ },
+ "/rankings/grok-4.20-0309-non-reasoning": {
+  "title": "grok-4.20-0309-non-reasoning: 26.6 | Keygen Bench",
+  "description": "Rank 78 of 82. Best of 2 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-4.20-0309-non-reasoning.png"
+ },
+ "/tracker/grok-build": {
+  "title": "grok-build: 25.3 | Keygen Bench",
+  "description": "Rank 79 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-build.png"
+ },
+ "/rankings/grok-build": {
+  "title": "grok-build: 25.3 | Keygen Bench",
+  "description": "Rank 79 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/grok-build.png"
+ },
+ "/tracker/nemotron-3-super-120b-a12b": {
+  "title": "nemotron-3-super-120b-a12b: 24.7 | Keygen Bench",
+  "description": "Rank 80 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/nemotron-3-super-120b-a12b.png"
+ },
+ "/rankings/nemotron-3-super-120b-a12b": {
+  "title": "nemotron-3-super-120b-a12b: 24.7 | Keygen Bench",
+  "description": "Rank 80 of 82. Best of 3 attempts writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/nemotron-3-super-120b-a12b.png"
+ },
+ "/tracker/command-a-reasoning-08-2025": {
+  "title": "command-a-reasoning-08-2025: 22.2 | Keygen Bench",
+  "description": "Rank 81 of 82. Best of 1 attempt writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/command-a-reasoning-08-2025.png"
+ },
+ "/rankings/command-a-reasoning-08-2025": {
+  "title": "command-a-reasoning-08-2025: 22.2 | Keygen Bench",
+  "description": "Rank 81 of 82. Best of 1 attempt writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/command-a-reasoning-08-2025.png"
+ },
+ "/tracker/nemotron-3.5-lightning": {
+  "title": "nemotron-3.5-lightning: 20.7 | Keygen Bench",
+  "description": "Rank 82 of 82. Best of 1 attempt writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/nemotron-3.5-lightning.png"
+ },
+ "/rankings/nemotron-3.5-lightning": {
+  "title": "nemotron-3.5-lightning: 20.7 | Keygen Bench",
+  "description": "Rank 82 of 82. Best of 1 attempt writing a keygen tune in FastTracker II. Listen to it in the tracker.",
+  "image": "/dist/og/nemotron-3.5-lightning.png"
+ }
+}
